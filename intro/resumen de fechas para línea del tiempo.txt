@@ -1,0 +1,38 @@
+﻿1989: Tim Berners-Lee conceptualiza la web.
+1991: Aparición pública de la web mediante los grupos de noticias.
+1993: El National Center for Supercomputing Applications (NCSA) de la University
+	of Illinois en Urbana-Champaign (UIUC) introdujo el navegador Mosaic.
+1994: El líder de Mosaic funda Netscape y comercializa su Netscape Navigator gratis
+	para uso no comercial.
+1994: Berners-Lee funda el World Wie Web Consortium (W3C) en el Massachusetts
+	Institute of Technology (MIT) para crear estándares web.
+1994: Opera nace como un proyecto de investigación de Telenor.
+1995: Microsoft incluye Internet Explorer 1.0 en Windows 95, basado en código fuente
+	de NCSA Mosaic.
+1995: A finales del año Netscape desarrolló Javascript.
+1995: La Internet Engineering Task Force (IETF) aprueba HTML 2.0.
+1995: W3C propone HTML 3.0.
+1996: Opera sale al público.
+1997: Netscape fusiona su navegador con otros programas de email y calendario,
+	llamado Netscape Communicator.
+1997: Microsoft integra Internet Explorer con Windows y al Netscape no poder
+	competir con esto, se rinde.
+1997: HTML 2.0 se convierte en estándar internacional.
+1997: IETF traslada la estandarización al W3C y se publica el HTML 3.2.
+1998: Netscape libera su código fuente y se funda el proyecto Mozilla, pero deciden
+	mejor iniciar desde cero. Se crea el nuevo motor de navegador Gecko.
+1998: W3C publica el estándar XML (Extension Markup Language).
+1999: Se adopta HTML 4.01 Strict como estándar internacional.
+2001-2006: Microsoft detiene el desarrollo de Internet Explorer.
+2002-2006: W3C trabaja en XHTML 2.0.
+2003: Microsoft descontinúa Internet Explorer for Mac.
+2003: Apple lanza su propio navegador llamado Safari, basado en el motor WebKit.
+2004: Se funda el Web Hypertext Application Technology Working Group (WHATWG), con
+	Mozilla, Opera y Apple como miembros.
+2004: Sale al público Firefox.
+2006: Microsoft lanza Internet Explorer 7, imitando características de Opera y Firefox.
+2008: Google lanza Chrome, basado en el motor WebKit.
+2009: Microsoft lanza Internet Explorer 9, apegándose más a los estándares web.
+
+
+	
