@@ -1,0 +1,17 @@
+Ejercicio web_vs_desktop
+
+Las aplicaciones web tienen la ventaja de que pueden ser 'ejecutadas' en muchas
+plataformas a la vez, ya que solo necesitan un navegador que cumpla con los
+estándares web para su debida visualización. Hoy en día la mayoría de los navegadores
+se inclinan por soportar los estándares, lo que hace sumamente sencillo llegar a
+muchos más usuarios.
+
+Por otro lado, las aplicaciones de escritorio deben ser programadas dependiendo del
+sistema operativo donde se van a ejecutar y eso dificulta el aspecto multiplataforma.
+Sin embargo, al programar aplicaciones de escritorio se tiene una ventaja al poder hacer
+uso de capacidades específicas de un determinado sistema operativo como, por ejemplo, un
+videojuego que aproveche la biblioteca de rutinas DirectX en Windows para su ejecución.
+
+Depende de las necesidades de cada programador el si es mejor aprovecha la practicidad
+de las aplicaciones web o si es mejor aprovechar las cualidades exclusivas de un sistema
+operativo.
