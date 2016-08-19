@@ -1,0 +1,7 @@
+Ejercicio resource_location
+
+¿Cuáles son los pasos que realiza un servidor web para encontrar en el sistema de archivos local un recurso solicitado a través de un URL? Por ejemplo, si intenta acceder a http://localhost/bio/foto.jpg ¿a qué archivo de su sistema de archivos, exista o no, intenta acceder el servidor web? ¿A qué recurso intenta acceder el servidor web cuando se le solicita simplemente http://localhost/?.
+
+Respuesta:
+
+El servidor web busca primero cual es la carpeta que nosotros definimos como document root, esa es la carpeta por defecto donde al escribir localhost en un navegador el servidor web escucha y devuelve. Cuando se pone localhost/loquesea.jpg entonces el servidor se ubica en la raiz de la carpeta que definimos (que puede estar en cualquier lugar de nuestra computadora) y de ahi intenta navegar hasta llegar a encontra el recurso. Por así decirlo localhost se traduce a la carpeta raíz de nuestra página. Eso se define en el archivo de configuración del Apache, que es el que estoy usando en este momento.
