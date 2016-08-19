@@ -1,0 +1,3 @@
+Ejercicio local_development_environment
+
+Escogí Apache (específicamente XAMPP) ya que es de uso libre, tiene muchos recursos en línea para ayudarse, es fácil de instalar y configurar (por lo menos en el ambiente local en el cual lo hice).
