@@ -1,0 +1,7 @@
+Ejercicio standard_strict_navigator
+
+Si usted implementara un navegador web que se apegue fiel y únicamente a los estándares ¿Sería útil para que sus usuarios naveguen libremente en la web? Explique en un documento de texto.
+
+Respuesta:
+
+Si sería muy útil porque, en teoría, debería poder accesar cualquier página web que se declare en orden con los estándares. Pero por otro lado, es una utopía pensar que la web va a llegar a ser 100% libre de formatos propietarios entonces creo que debe haber un balance y como mínimo lograr que nuestro navegador sea fiel a los estándares, luego de ahí partir con el deber de soportar muchas más características que, aunque no sean estándares, si sean muy populares en el resto de la web.

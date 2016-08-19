@@ -1,4 +1,4 @@
-﻿1989: Tim Berners-Lee conceptualiza la web.
+1989: Tim Berners-Lee conceptualiza la web.
 1991: Aparición pública de la web mediante los grupos de noticias.
 1993: El National Center for Supercomputing Applications (NCSA) de la University
 	of Illinois en Urbana-Champaign (UIUC) introdujo el navegador Mosaic.
