@@ -1,0 +1,14 @@
+Ejercicio encoding
+
+Varios caracteres, como el slash (/), el signo de pregunta (?) y el espacio en blanco, tienen un significado especial en un URL. Si un usuario necesita incluir estos caracteres en un URL pero sin su significado especial, investigue y explique cómo se puede hacer. Convierta el siguiente URL en uno válido:
+
+
+http://localhost/f.php?code="f(n) {return n ? n/f(n-1) : 1;}"
+
+Respuesta:
+
+Hay que codificar la parte del URL que no significa realmente caracteres de URL con una codificación especial. En este caso se codificó del signo = en adelante.
+
+Fuente: http://www.w3schools.com/tags/ref_urlencode.asp
+
+http://localhost/f.php?code=%22f%28n%29%20%7Breturn%20n%20%3F%20n%2Ff%28n%2D1%29%20%3A%201%3B%7D%22
