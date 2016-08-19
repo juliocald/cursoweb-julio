@@ -1,0 +1,1500 @@
+Ejercicio telnet_web_talk
+
+Indague cómo tener una sesión con un servidor web a través de telnet. Escoja un sitio que visite con frecuencia y hable HTTP con el servidor. Actúe como un navegador. Solicite al menos una página HTML, un recurso binario que sabe que existe en el servidor, y un recurso que no existe. Transcriba su sesión telnet a un documento de texto.
+
+Respuesta:
+
+Julios-MacBook-Pro:~ Julio$ telnet daringfireball.net 80
+Trying 199.192.241.217...
+Connected to daringfireball.net.
+Escape character is '^]'.
+GET / HTTP/1.1
+Host: daringfireball.net
+
+HTTP/1.1 200 OK
+Date: Fri, 19 Aug 2016 20:31:25 GMT
+Server: Apache
+Served-By: Joyent
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+12b09
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Daring Fireball</title>
+	<meta name="viewport" content="width=500, minimum-scale=0.45" />
+	<link rel="apple-touch-icon-precomposed" href="/graphics/apple-touch-icon.png" />
+	<link rel="shortcut icon" href="/graphics/favicon.ico?v=005" />
+	<link rel="mask-icon" href="/graphics/dfstar.svg" color="#4a525a">
+	<link rel="stylesheet" type="text/css" media="screen"  href="/css/fireball_screen.css?v1.7" />
+	<link rel="stylesheet" type="text/css" media="screen"  href="/css/ie_sucks.php" />
+	<link rel="stylesheet" type="text/css" media="print"   href="/css/fireball_print.css?v01" />
+	<link rel="alternate" type="application/atom+xml" href="/feeds/main" />
+	<script src="/js/js-global/FancyZoom.js" type="text/javascript"></script>
+	<script src="/js/js-global/FancyZoomHTML.js" type="text/javascript"></script>
+</head>
+<body onload="setupZoom()">
+<div id="Box">
+
+<a href="/" title="Daring Fireball: Home"><img src="/graphics/logos/" alt="Darin<div id="Sidebar">="56" /></a>
+<p>By <strong>John&nbsp;Gruber</strong></p>
+
+<ul><!--&#9733;-->
+<li><a href="/archive/" title="Previous articles.">Archive</a></li><li><script type="text/javascript">
+// <![CDATA[
+function ReadCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1, c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+	}
+	return null;
+}
+var display_linked_list = ReadCookie('displayLinkedList');
+var li_linked = '<a href="/linked/" title="The Linked List.">Linked List<\/a>';
+if (display_linked_list == "hide") {
+	// Linked List is off on home page, so show it in menu:
+	document.write(li_linked + "<\/li>\n<li>");
+}
+else {
+	// Default to not putting separate LL item in sidebar:
+}
+// ]]>
+</script></li>
+<li><a href="/thetalkshow/" title="The world’s most popular podcast.">The Talk Show</a></li>
+<li><a href="http://vesperapp.co/" title="A simple, elegant iOS app for collecting notes, ideas, thoughts, and images.">Vesper</a></li>
+<li><a href="/projects/" title="Software projects, including SmartyPants and Markdown.">Projects</a></li>
+<li><a href="/contact/" title="How to send email regarding Daring Fireball.">Contact</a></li>
+<li><a href="/colophon/" title="About this site and the tools used to produce it.">Colophon</a></li>
+<li><a href="/feeds/">RSS Feed</a></li>
+<li><a href="https://twitter.com/daringfireball">Twitter</a></li>
+<li><a href="/feeds/sponsors/">Sponsorship</a></li>
+</ul>
+
+</div> <!-- Sidebar -->
+
+<div id="Main">
+
+<dl class="linkedlist">
+<dt>
+<a href="http://www.macrumors.com/2016/08/18/apple-drops-store-branding/">Apple Drops ‘Store’ From Apple Store&#160;Branding</a>&nbsp;<a class="permalink" title="Permanent link to ‘Apple Drops ‘Store’ From Apple Store Branding’" href="http://daringfireball.net/linked/2016/08/19/apple-store-no-more">&#9733;</a>
+</dt>
+<dd>
+<p>Juli Clover, reporting for MacRumors:</p>
+
+<blockquote>
+  <p>Apple appears to be making a slight branding change to its retail
+business, dropping the &#8220;Store&#8221; moniker when referring to its Apple
+Store locations. Apple has already made the change online, and all
+of its store pages now refer to stores by names like &#8220;Apple Union
+Square&#8221; or &#8220;Apple Valley Fair&#8221; or &#8220;Apple The Grove,&#8221; instead of
+&#8220;Apple Store, Valley Fair&#8221; or &#8220;Apple Store, The Grove.&#8221;</p>
+
+<p>It&#8217;s a change that appears to have started rolling out with the
+launch of the newer Apple Stores, like the Union Square location
+in San Francisco. Apple has always referred to that store as just
+Apple Union Square, and over the course of the last few days, the
+company has updated all of its retail store webpages to remove the
+&#8220;Store&#8221; branding. What was once &#8220;Apple Store, Fifth Avenue,&#8221; for
+example, is now just &#8220;Apple Fifth Avenue.&#8221;</p>
+</blockquote>
+
+<p>The &#8220;Store&#8221; branding only made sense when the concept was novel. Now that Apple&#8217;s stores are well established, it makes sense to drop the &#8220;Store&#8221;. Think about the brands that are Apple&#8217;s peers in retail. No one goes to the Tiffany Store or Gucci Store, they just go to Tiffany or Gucci. It&#8217;s not even just a premium thing &#8212; you say Target and Walmart, not Target Store and Walmart Store.</p>
+
+</dd>
+
+
+</dl>
+
+<hr class="ookiaks" />
+
+
+<div class="article">
+<h1><a href="http://daringfireball.net/2016/08/is_donald_trump_actually_trying_to_win" title="Permanent link to ‘Is Donald Trump Actually Trying to Win?’">Is Donald Trump Actually Trying to&#160;Win?</a></h1>
+<h6 class="dateline">Thursday, 18 August 2016</h6>
+
+<p>Nate Silver, &#8220;<a href="http://fivethirtyeight.com/features/trump-is-doubling-down-on-a-losing-strategy/">Trump Is Doubling Down on a Losing Strategy</a>&#8221;:</p>
+
+<blockquote>
+  <p>So it’s not surprising that Trump has undertaken a major shakeup
+of his campaign, hiring Bannon and promoting the pollster
+Kellyanne Conway. Campaign Chairman Paul Manafort has effectively
+been demoted. But rather than make a much-expected “pivot” toward
+general election voters &#8212; as Manafort had reportedly been pushing
+for &#8212; the new plan is to “let Trump be Trump,” doubling down on
+the strategies that Trump used to win the nomination, including an
+emphasis on nationalism, populism and “brutal fights with
+Clinton”. [&#8230;]</p>
+
+<p>If you trust the polls, this seems like a fundamental strategic
+error. Trump is running worse than Mitt Romney among almost all
+demographic groups; white men without a college degree are the
+most prominent exception. But there aren’t enough of those men to
+form a majority or really even to come all that close.</p>
+</blockquote>
+
+<p>It&#8217;s a crazy strategy if his goal is to win the election. But what if Trump <em>doesn&#8217;t want to win</em>? Back in March, former <a href="http://www.xojane.com/issues/stephanie-cegielski-donald-trump-campaign-defector">Trump strategist Stephanie Cegielski wrote an eye-opening piece for XO Jane</a>, claiming the goal was never to win:</p>
+
+<blockquote>
+  <p>Even Trump&#8217;s most trusted advisors didn&#8217;t expect him to fare
+this well.</p>
+
+<p>Almost a year ago, recruited for my public relations and public
+policy expertise, I sat in Trump Tower being told that the goal
+was to get The Donald to poll in double digits and come in second
+in delegate count. That was it.</p>
+
+<p>The Trump camp would have been satisfied to see him polling at 12%
+and taking second place to a candidate who might hold 50%. His
+candidacy was a protest candidacy.</p>
+</blockquote>
+
+<p>Even if this is true, I disagree with describing him as a &#8220;protest candidate&#8221;. He is, fundamentally, a self-promotional candidate. He&#8217;s doing it to promote the Trump brand and increase his personal celebrity. His support comes from people who <em>see</em> him as a protest candidate, but Trump himself cares only about Trump, not immigration or Middle East foreign affairs or who&#8217;s nominated for the Supreme Court. The evidence is that his positions on those subjects have been all over the map.</p>
+
+<p>I found Cegielski&#8217;s bold claim credible right from the start. That could be wishful thinking on my part, because I don&#8217;t <em>want</em> him to be president. It&#8217;s easy to believe what you want to be true. That&#8217;s the sort of thinking that led a lot of Mitt Romney supporters (including Romney himself) to believe that because of &#8220;<a href="http://www.rightwingwatch.org/content/return-unskew-polls-donald-trump-edition">skewing</a>&#8221;, Romney was going to beat Obama in 2012 despite the fact that all the major polls showed him losing. The basic idea is that U.S.-based polls are &#8220;skewed&#8221; in favor of Democratic candidates, and that when &#8220;unskewed&#8221;, you could see that Romney was actually winning. But there was never any actual evidence that the polls were skewed &#8212; Republicans bought into it simply because they wanted it to be true.</p>
+
+<p>But to my mind, Trump&#8217;s entire campaign strategy makes more sense in this scenario. I think Trump finds being a <em>candidate</em> for president to be a lot of fun. He loves the big crowds and the sound of his own voice. He loves being on the TV news non-stop, and on the front page of every newspaper, every day. I think he&#8217;d find actually <em>being</em> president to be terribly boring. By all accounts, it&#8217;s a lot of work, even for presidents like Reagan and George W. Bush, who delegated smaller decisions and seldom concerned themselves with the intricacies of policy details.</p>
+
+<p>[<strong>Update:</strong> As proof that Trump knows the job itself would bore him, note that The New York Times reported the following:</p>
+
+<blockquote>
+  <p>One day this past May, Donald Trump’s eldest son, Donald Trump
+Jr., reached out to a senior adviser to Gov. John Kasich of Ohio,
+who left the presidential race just a few weeks before. As a
+candidate, Kasich declared in March that Trump was “really not
+prepared to be president of the United States,” and the following
+month he took the highly unusual step of coordinating with his
+rival Senator Ted Cruz in an effort to deny Trump the nomination.
+But according to the Kasich adviser (who spoke only under the
+condition that he not be named), Donald Jr. wanted to make him an
+offer nonetheless: Did he have any interest in being the most
+powerful vice president in history?</p>
+
+<p>When Kasich’s adviser asked how this would be the case, Donald Jr.
+explained that his father’s vice president would be in charge of
+domestic and foreign policy.</p>
+
+<p>Then what, the adviser asked, would Trump be in charge of?</p>
+
+<p>“Making America great again” was the casual reply.</p>
+</blockquote>
+
+<p><a href="http://www.cnn.com/2016/08/07/politics/john-kasich-donald-trump-election-2016/">Kasich himself confirmed the phone call</a> in an interview with CNN&#8217;s Jake Tapper. That&#8217;s an extraordinary offer, but admittedly, not the same thing as not wanting to win the election. It&#8217;s certainly on the spectrum, though. I suspect it hinges on cognitive dissonance &#8212; Trump doesn&#8217;t want to lose (and certainly not in an embarrassing landslide), but also doesn&#8217;t want to perform the job of president.]</p>
+
+<p>Michael Moore, writing yesterday for The Huffington Post, claims to know for a fact that Trump doesn&#8217;t want to win. <a href="http://www.huffingtonpost.com/michael-moore/trump-self-sabotage_b_11545026.html">He&#8217;s only trying to get a better TV deal</a>:</p>
+
+<blockquote>
+  <p>So, on June 16 of last year, he rode down his golden escalator and
+opened his mouth. With no campaign staff, no 50-state campaign
+infrastructure &#8212; neither of which he needed because, remember,
+this wasn’t going to be a real campaign &#8212; and with no prepared
+script, he went off the rails at his kick-off press conference,
+calling Mexicans “rapists” and “drug dealers” and pledging to
+build a wall to keep them all out. Jaws in the room were agape.
+His comments were so offensive, NBC, far from offering him a
+bigger paycheck, immediately fired him with this terse statement:
+“Due to the recent derogatory statements by Donald Trump regarding
+immigrants, NBCUniversal is ending its business relationship with
+Mr. Trump.” NBC said it was also canceling the beauty pageants
+owned by Trump: Miss USA and Miss Universe. BOOM.</p>
+
+<p>Trump was stunned. So much for the art of the deal. He never
+expected this, but he stuck to his plan anyway to increase his
+“value” in the eyes of the other networks by showing them how many
+millions of Americans wanted Him to be their Leader.</p>
+</blockquote>
+
+<p>Moore does not reveal his source for this information, but hints that it comes from someone at NBC. Take it with a grain of salt. But it jibes perfectly with Cegielski&#8217;s claim that they only wanted to finish second and do a lot of showboating along the way.</p>
+
+<p>Where I&#8217;ve struggled with this scenario is Trump&#8217;s intended end game. If it&#8217;s true Trump doesn&#8217;t want to be president, how does he get out of this while saving face? As Nate Silver wrote above, if he wanted to try to win, or least wanted to make the election as close as possible, he&#8217;d be campaigning hard to the center. Instead he&#8217;s running hard to the right.</p>
+
+<p>What if Trump&#8217;s goal, now that he&#8217;s the Republican nominee, remains the same as it was a year ago when he announced his candidacy? Not to become president, but to be on TV and make a lot of money doing it. But now, instead of being the star of a show on someone else&#8217;s network, he could own a channel of his own. (Or in <a href="https://www.washingtonpost.com/graphics/politics/2016-election/trump-lies/">typical</a> Trump fashion, own a minority stake but put his name all over it.)</p>
+
+<p><a href="https://newrepublic.com/article/136128/trumps-media-empire-takes-shape">Jeet Heer, writing for The New Republic, lays out the case</a>, in the wake of Trump naming &#8220;<a href="http://www.nytimes.com/2016/08/18/us/politics/donald-trump-stephen-bannon-paul-manafort.html">media firebrand</a>&#8221; Steve Bannon to run the remainder of his campaign:</p>
+
+<blockquote>
+  <p>But if the Trump campaign is an epic disaster, that doesn’t mean
+he doesn’t know what he’s doing. In fact, by cementing ties with
+Breitbart and <a href="http://www.nytimes.com/2016/08/17/us/politics/donald-trump-roger-ailes.html">seeking advice</a> from disgraced former Fox News
+head Roger Ailes, Trump has sent his strongest signal yet that
+long-held suspicions about his media-mogul aspirations are true.
+He’s using the election to develop an intensely loyal audience
+that occupies a special niche: those who think Fox News is too
+mainstream. Who better to help him cash in on such an effort than
+Bannon and Ailes?</p>
+</blockquote>
+
+<p>The idea that there is sufficient demand for a media outlet <em>to the right</em> of Fox News is extraordinary, but Trump&#8217;s sizable minority of supporters suggests that there might be. Fox News is the network of the Republican Party. (Or as Bush speechwriter <a href="http://mediamatters.org/video/2010/03/23/frum-republicans-originally-thought-that-fox-wo/162116">David Frum remarked in 2010</a>, &#8220;Republicans originally thought that Fox worked for us, and now we are discovering we work for Fox.&#8221;) Trump voters support him not <em>despite</em> the fact that he&#8217;s touting ideas that are almost completely contrary to traditional Republican policies; they&#8217;re supporting him <em>because</em> his ideas are contrary to traditional Republican policies. It makes sense these same people would be dissatisfied with the traditional Republican news network. There aren&#8217;t enough of them to win the Electoral College, but there are more than enough of them to form the audience of a successful media outlet.</p>
+
+<p><a href="http://www.nytimes.com/2016/08/18/us/politics/donald-trump-stephen-bannon-paul-manafort.html">The New York Times reported yesterday</a>:</p>
+
+<blockquote>
+  <p>In recent months, Mr. Trump and his son-in-law, Jared Kushner,
+have quietly explored becoming involved with a media holding,
+either by investing in one or by taking one over, according to a
+person close to Mr. Trump who was briefed on those discussions.</p>
+
+<p>At a minimum, the campaign’s homestretch offers Mr. Trump, who has
+begun to limit his national media appearances to conservative
+outlets, an opportunity to build his audience and steer his
+followers toward the combative Breitbart site.</p>
+</blockquote>
+
+<p>(Kushner is publisher of The New York Observer.)</p>
+
+<p>In short, Trump isn&#8217;t trying to appeal to more people, which is how you win elections. He&#8217;s trying to appeal more to the people who already support him. That&#8217;s how you might build an audience for an &#8220;alt-right&#8221; media company.</p>
+
+<p>The idea that the Republican nominee for president doesn&#8217;t actually want to be president is outlandish. But Donald Trump <em>is</em> outlandish. And what I find compelling about this scenario is that it does not imply that Trump is stupid. Here is a short list of adjectives I personally would use to describe Trump: <em>reprehensible</em>, <em>bigoted</em>, <em>reckless</em>, <em>obnoxious</em>, <em>selfish</em>, <em>incurious</em>, <em>under-informed</em>. But one word I wouldn&#8217;t use is <em>stupid</em>. <em>Ignorant</em>, yes, but not stupid.</p>
+
+<p>If Trump is trying to win the election, what he&#8217;s doing the last few weeks doesn&#8217;t make any sense. But if his goal is <em>not</em> to win, then maybe he&#8217;s crazy like a fox. A fox with no regard whatsoever for civil discourse, the stability of our republic, or the future of the Republican Party &#8212; but a fox nonetheless.&nbsp;<a class="permalink" title="Permanent link to ‘Is Donald Trump Actually Trying to Win?’" href="http://daringfireball.net/2016/08/is_donald_trump_actually_trying_to_win">&#9733;</a></p>
+
+</div> <!-- article -->
+
+<hr class="ookiaks" />
+
+
+<h2 class="dateline">Thursday, 18 August 2016</h2>
+<dl class="linkedlist">
+<dt>
+<a href="http://gawker.com/gawker-com-to-end-operations-next-week-1785455712">Gawker.com to End Operations Next&#160;Week</a>&nbsp;<a class="permalink" title="Permanent link to ‘Gawker.com to End Operations Next Week’" href="http://daringfireball.net/linked/2016/08/18/gawker-the-end">&#9733;</a>
+</dt>
+<dd>
+<p>J.K. Trotter, writing for Gawker:</p>
+
+<blockquote>
+  <p>After nearly fourteen years of operation, Gawker.com will be
+shutting down next week. The decision to close Gawker comes days
+after Univision successfully bid $135 million for Gawker Media’s
+six other websites, and four months after the Silicon Valley
+billionaire Peter Thiel revealed his clandestine legal campaign
+against the company.</p>
+</blockquote>
+
+<p><a href="http://talkingpointsmemo.com/edblog/ads-the-demise-of-gawker">Josh Marshall</a>:</p>
+
+<blockquote>
+  <p>Needless to say, Gawker courted a huge amount of controversy. And
+the decision to shutter it may, for all I know, be tied entirely
+to legal liability. But I have no doubt Gawker&#8217;s controversial rep
+put a permanent dent in ads sales - think of it as an inverse
+premium. The other thing though is that Gawker had no endemic ad
+proposition. Fun, news scoops and schadenfreude have no allied
+consumer products. But if you look at the other Gawker Media sites
+they were each carefully and wisely aligned with strong endemic ad
+propositions.</p>
+
+<p>So given all that&#8217;s happened, even over and above whatever legal
+complexities are involved, it makes sense that a big corporate
+media giant would see the other Gawker Media sites as the drivers
+of value, not Gawker itself.</p>
+</blockquote>
+
+<p>It always seemed clear to me that Gawker was Nick Denton&#8217;s baby, a labor of love. The other more targeted Gawker sites were there to prop up Gawker financially. Now that the company has been sold, there&#8217;s no one left who wants Gawker propped up.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.medalspercapita.com/#weighted-per-capita:2016">Olympic Medals Per&#160;Capita</a>&nbsp;<a class="permalink" title="Permanent link to ‘Olympic Medals Per Capita’" href="http://daringfireball.net/linked/2016/08/18/olympic-medals-per-capita">&#9733;</a>
+</dt>
+<dd>
+<p>This is an interesting perspective on Olympic medal counts &#8212; pro-rated by population. The United States finishes in the middle of the pack, right behind Russia and North Korea. New Zealand and Jamaica are performing the best (other than statistical outliers).</p>
+
+<p>India comes in dead last, by a long shot. This year they have just one single medal, from a country of over 1.3 billion people. <a href="http://www.bbc.com/news/world-asia-india-36941269">This story by Justin Rowlatt for the BBC News</a> makes it sound like there are three main factors:</p>
+
+<ol>
+<li>India is very poor. Their economy is growing, but the government is spending on education, not sports. They spend so little <a href="https://www.youtube.com/watch?v=nrZ_MFoWo00">they make their athletes pay their own way to the Olympics</a>.</li>
+<li>Indian culture doesn&#8217;t put much value on sports, so even good athletes are under family pressure to give it up and focus on school.</li>
+<li>Cricket is so popular in India that most of the best athletes play it &#8212; but cricket is not an Olympic sport. (And even if it were, it could only give them two additional medals: one for men and one for women.)</li>
+</ol>
+
+</dd>
+
+
+</dl>
+
+<hr class="ookiaks" />
+
+
+<div class="article">
+<h1><a href="http://daringfireball.net/2016/08/uber_pittsburgh" title="Permanent link to ‘Uber to Begin Testing Self-Driving Cars in Pittsburgh’">Uber to Begin Testing Self-Driving Cars in&#160;Pittsburgh</a></h1>
+<h6 class="dateline">Thursday, 18 August 2016</h6>
+
+<p><a href="http://www.bloomberg.com/news/features/2016-08-18/uber-s-first-self-driving-fleet-arrives-in-pittsburgh-this-month-is06r7on">Max Chafkin, reporting for Bloomberg</a>:</p>
+
+<blockquote>
+  <p>Near the end of 2014, Uber co-founder and Chief Executive Officer
+Travis Kalanick flew to Pittsburgh on a mission: to hire dozens of
+the world’s experts in autonomous vehicles. The city is home to
+Carnegie Mellon University’s robotics department, which has
+produced many of the biggest names in the newly hot field.</p>
+</blockquote>
+
+<p>That&#8217;s a bit of a whitewashing. What happened is that Uber approached Carnegie Mellon to create a &#8220;strategic partnership&#8221;. Uber&#8217;s strategy, it turned out, was to identify CMU&#8217;s best engineers and hire them away. <a href="https://daringfireball.net/linked/2015/06/04/uber-cmu">As I wrote at the time</a>, their &#8220;partnership&#8221; was like that between a fox and a henhouse.</p>
+
+<blockquote>
+  <p>The goal: to replace Uber’s more than 1 million human drivers with
+robot drivers &#8212; as quickly as possible.</p>
+
+<p>The plan seemed audacious, even reckless. And according to most
+analysts, true self-driving cars are years or decades away.
+Kalanick begs to differ. “We are going commercial,” he says in an
+interview with Bloomberg Businessweek. “This can’t just be about
+science.”</p>
+</blockquote>
+
+<p>Jobs that <em>can</em> be performed by machines eventually <em>will</em> be performed by machines. That&#8217;s been the steady march of progress since the dawn of the industrial revolution. But it really is extraordinary for a CEO to flatly declare that he considers the company&#8217;s workforce not to be an asset, but rather a stopgap measure he&#8217;s committed to eliminate. Say what you want about the politics of his bluntness, but he certainly deserves points for honesty.</p>
+
+<blockquote>
+  <p>Starting later this month, Uber will allow customers in downtown
+Pittsburgh to summon self-driving cars from their phones, crossing
+an important milestone that no automotive or technology company
+has yet achieved. Google, widely regarded as the leader in the
+field, has been testing its fleet for several years, and Tesla
+Motors offers Autopilot, essentially a souped-up cruise control
+that drives the car on the highway. Earlier this week, Ford
+announced plans for an autonomous ride-sharing service. But none
+of these companies has yet brought a self-driving car-sharing
+service to market.</p>
+</blockquote>
+
+<p>Google has certainly generated a lot of publicity regarding its self-driving vehicle efforts, but I am not convinced they&#8217;re the &#8220;leader in the field&#8221;. For one thing, Google&#8217;s cars only go 25 MPH. I&#8217;ve ridden in a self-driving Mercedes S-class sedan. Not only did it travel at highway speeds, but it didn&#8217;t have any obtrusive cameras or sensors. <a href="http://www.recode.net/2015/11/26/11620962/mercedes-benz-wants-to-beat-google-uber-to-our-driverless-future">It looked like a regular Mercedes sedan</a> &#8212; except for the fact that it had &#8220;<strong>S 500 Intelligent Drive</strong>&#8221; painted in large letters on the side of the car. The engineers I spoke with at Mercedes were adamant that even now, while the technology is still in development and years away from production, the cars need to look beautiful. Any sensors that make the car look silly are out of the question.</p>
+
+<p>Perhaps Mercedes is too rooted in tradition in this regard. The first automobiles really did look like &#8220;horseless carriages&#8221;. Perhaps we&#8217;ll soon adapt to self-driving cars equipped with telltale obtrusive sensors. But right now, Mercedes has prototypes on the road that are remarkably close to full autonomy, yet don&#8217;t look any different. If Mercedes is <em>correct</em> that customers (or at least Mercedes customers) won&#8217;t want to buy self-driving cars that look ungainly, they have a significant leg up on competitors whose sensor arrays protrude. The technology isn&#8217;t everything &#8212; design matters.</p>
+
+<p><strong>Update:</strong> If you disagree &#8212; if <a href="http://twitter.com/brianfagioli/status/766357347216261120">you think the outward appearance of a self-driving car doesn&#8217;t matter</a>, only the comfort and amenities of the interior &#8212; I think you&#8217;re being shortsighted. If all self-driving cars are ungainly-looking, they&#8217;ll still sell. Uber is <em>already</em> buying ungainly-looking self-driving cars. But what happens when a company starts selling <em>good-looking</em> self-driving cars? Cars are status symbols &#8212; even cars you don&#8217;t own. What else explains the existence of black town cars? A lot of people used to argue that the exterior design of personal computers didn&#8217;t matter, either &#8212; only the functionality. No one argues that <a href="http://www.wolframalpha.com/input/?i=aapl+market+cap+from+1996+to+2016">anymore</a>.</p>
+
+<blockquote>
+  <p>For now, Uber’s test cars travel with safety drivers, as common
+sense and the law dictate. These professionally trained engineers
+sit with their fingertips on the wheel, ready to take control if
+the car encounters an unexpected obstacle. A co-pilot, in the
+front passenger seat, takes notes on a laptop, and everything that
+happens is recorded by cameras inside and outside the car so that
+any glitches can be ironed out. Each car is also equipped with a
+tablet computer in the back seat, designed to tell riders that
+they’re in an autonomous car and to explain what’s happening. “The
+goal is to wean us off of having drivers in the car, so we don’t
+want the public talking to our safety drivers,” Krikorian says.</p>
+
+<p>On a recent weekday test drive, the safety drivers were still an
+essential part of the experience, as Uber’s autonomous car briefly
+turned un-autonomous, while crossing the Allegheny River. A chime
+sounded, a signal to the driver to take the wheel. A second ding a
+few seconds later indicated that the car was back under computer
+control. “Bridges are really hard,” Krikorian says. “And there are
+like 500 bridges in Pittsburgh.”</p>
+</blockquote>
+
+<p>It&#8217;s easy to roll your eyes at the use of the term &#8220;self-driving&#8221; to describe a car with two employees in the front, ready to take control at a moment&#8217;s notice. But the fact that regular people will soon be taking real-world rides where no human takes any control throughout the trip is a genuine milestone. We&#8217;re on the cusp of the biggest change to the car industry, ever. &nbsp;<a class="permalink" title="Permanent link to ‘Uber to Begin Testing Self-Driving Cars in Pittsburgh’" href="http://daringfireball.net/2016/08/uber_pittsburgh">&#9733;</a></p>
+
+</div> <!-- article -->
+
+<hr class="ookiaks" />
+
+
+<h2 class="dateline">Monday, 15 August 2016</h2>
+<dl class="linkedlist">
+<dt>
+<a href="http://daringfireball.net/thetalkshow/2016/08/12/ep-164">The Talk Show: ‘Enjoyably&#160;Clicky’</a>&nbsp;<a class="permalink" title="Permanent link to ‘The Talk Show: ‘Enjoyably Clicky’’" href="http://daringfireball.net/linked/2016/08/15/the-talk-show-164">&#9733;</a>
+</dt>
+<dd>
+<p>This week&#8217;s episode of my podcast, The Talk Show, with special guest Jason Snell. Topics include the latest rumors regarding the upcoming new iPhones and MacBook Pros, Rick Tetzeli’s cover story for Fast Company on Tim Cook’s Apple, the saga of Apple Maps, and the connection between baseball and mechanical keyboards.</p>
+
+<p>Sponsored by:</p>
+
+<ul>
+<li><a href="http://BoomForiOS.com/">Boom for iOS</a>: Music player app that redefines the way you listen to music on your iPhone or iPad. Free download.</li>
+<li><a href="https://www.fractureme.com/podcast">Fracture</a>: Your pictures, printed directly on glass.</li>
+<li><a href="http://eero.com/">Eero</a>: Finally, Wi-Fi that works. Use code <strong>thetalkshow</strong> for free overnight shipping.</li>
+</ul>
+
+</dd>
+
+
+<dt>
+<a href="http://www.macrumors.com/2016/08/15/kuo-10-5-ipad-pro-2017/">Ming-Chi Kuo: Apple Planning 10.5-Inch iPad Pro in&#160;2017</a>&nbsp;<a class="permalink" title="Permanent link to ‘Ming-Chi Kuo: Apple Planning 10.5-Inch iPad Pro in 2017’" href="http://daringfireball.net/linked/2016/08/15/kuo-ten-point-five">&#9733;</a>
+</dt>
+<dd>
+<p>Eric Slivka, writing for MacRumors:</p>
+
+<blockquote>
+  <p>According to Kuo, Apple is aiming to introduce a new 10.5-inch
+iPad Pro model next year to go along with a 12.9-inch iPad Pro 2
+and a &#8220;low-cost&#8221; 9.7-inch iPad model. Kuo makes no mention about
+the fate of the current 7.9-inch iPad mini, although many have
+assumed that model may be phased out as the recent 5.5-inch
+iPhone &#8220;Plus&#8221; models have helped lessen demand for Apple&#8217;s
+smallest tablet.</p>
+</blockquote>
+
+<p>If true, I&#8217;ll bet the aspect ratio changes. I can&#8217;t see why else they&#8217;d change to something so similar to the existing 9.7-inch size.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Friday, 12 August 2016</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://cncf.io/join">Cloud Native Computing Foundation&#160;(CNCF)</a>&nbsp;<a class="permalink" title="Permanent link to ‘Cloud Native Computing Foundation (CNCF)’" href="http://daringfireball.net/linked/2016/08/12/cloud-native-computing-foundation">&#9733;</a>
+</dt>
+<dd>
+<p>My thanks to the Cloud Native Computing Foundation for sponsoring this week&#8217;s DF RSS feed. Are you running Docker containers in production? Ready to share your story with the industry’s top developers, end users, and vendors?</p>
+
+<p>Cloud native computing uses an open source software stack to deploy applications as microservices, packaging each part into its own container, and dynamically orchestrating those containers to optimize resource utilization. CNCF hosts critical components of that software stack including Kubernetes and Prometheus and serves as a neutral home for collaboration. CNCF is looking for new members, and especially end users of cloud native technologies.</p>
+
+<p>If that describes you, check them out and join today.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://calacanis.com/2015/02/14/apple-will-buy-tesla-for-75b-in-18-months/">Jason Calacanis, 18 months Ago: ‘Apple Will Buy Tesla for $75B in 18&#160;Months’</a>&nbsp;<a class="permalink" title="Permanent link to ‘Jason Calacanis, 18 months Ago: ‘Apple Will Buy Tesla for $75B in 18 Months’’" href="http://daringfireball.net/linked/2016/08/12/calacanis-chowder">&#9733;</a>
+</dt>
+<dd>
+<p>Jason Calacanis, 14 February 2015:</p>
+
+<blockquote>
+  <p>Apple will buy Tesla for $75b in 18 months — it’s a lock (in my mind).</p>
+</blockquote>
+
+<p>Let&#8217;s use that lock to season the claim chowder on this one. (<a href="http://daringfireball.net/linked/2015/02/15/calacanis-tesla-apple">Yours truly at the time</a>: &#8220;If Apple were going to do this they’d have done it years ago.&#8221;)</p>
+
+<p><strong>Update:</strong> Even more seasoning for the claim chowder &#8212; Tesla&#8217;s market cap today: <a href="https://twitter.com/mixdup/status/764209359039627264">$33.4 billion</a>.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://om.co/2016/08/12/gruber-i-disagree-about-a-few-issues-about-apple/">Symbolic Leadership</a>&nbsp;<a class="permalink" title="Permanent link to ‘Symbolic Leadership’" href="http://daringfireball.net/linked/2016/08/12/symbolic-leadership">&#9733;</a>
+</dt>
+<dd>
+<p>Om Malik:</p>
+
+<blockquote>
+  <p>I think Gruber is missing the point &#8212; attending a game when a
+division you are responsible for is down for six hours is a clear
+lack of empathy for the customers, and also is a sign that
+standards are falling of what used to be an <em>Apple Standard</em> for
+building products of delight. Sure, things might have taken as
+much time to fix the iCloud, but the message you would have sent
+out to rest of the Apple team would have been different.</p>
+</blockquote>
+
+<p>Let&#8217;s unpack this. First, it has nothing to do with &#8220;empathy for the customers&#8221;. 99.999 percent of the customers whose iCloud accounts were affected by the June 2 outage have no idea who Eddy Cue is, let alone care whether he attended the Warriors game.</p>
+
+<p>As for the message to Apple employees, that&#8217;s really the only part of the &#8220;Eddy Cue should have skipped the game&#8221; argument that makes any sense to me. I disagree with it, but at least it makes sense. But it&#8217;s predicated on a lot of assumptions about Apple employee attitudes and morale, and Cue&#8217;s leadership and management abilities. Are the engineers and system administrators who were responsible for fixing the outage delicate emotionally fragile children who felt hurt when they found out Eddy Cue went to a basketball game while they were doing their jobs? Or are they mature professionals, who realize that the only thing that mattered was fixing the outage?</p>
+
+<p>And let&#8217;s go further. Let&#8217;s say Cue did skip the game. How would the employees working on the outage know that he skipped the game? Should Cue have been calling them every 15 minutes to see how it&#8217;s going? Should he have made them feel small by screaming at them, telling them that they&#8217;re incompetent shitheads? Should he have made them feel guilty by telling them that he was missing Game One of the NBA Finals, because of this outage? Or, should he simply trust them, leave them alone and let them do their jobs &#8212; in which case, he might as well have just gone to the fucking game.</p>
+
+<p>If we&#8217;re going to talk about symbolic leadership, I <em>like</em> what it says to Apple employees that Cue went to the game. It says having fun and a life outside work is good.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Thursday, 11 August 2016</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://techcrunch.com/2016/08/11/friendblock/amp/">Facebook to Deploy Ad Blocker Blocker Blocker&#160;Blocker</a>&nbsp;<a class="permalink" title="Permanent link to ‘Facebook to Deploy Ad Blocker Blocker Blocker Blocker’" href="http://daringfireball.net/linked/2016/08/11/facebook-ad-blocker-blocker-blocker-blocker">&#9733;</a>
+</dt>
+<dd>
+<p>Josh Constine, writing for TechCrunch:</p>
+
+<blockquote>
+  <p>A source close to Facebook tells me that today, possibly within
+hours, the company will push an update to its site’s code that
+will nullify Adblock Plus’ workaround. Apparently it took two days
+for Adblock to come up with the workaround, and only a fraction of
+that time for Facebook to disable it.</p>
+
+<p>Still, the cat-and-mouse game is sure to rage on.</p>
+</blockquote>
+
+<p>Whack-a-mole all the way down.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://ped30.com/2016/08/08/apple-om-malik-twit/">One More Thing on Om Malik’s Eddy Cue&#160;Rant</a>&nbsp;<a class="permalink" title="Permanent link to ‘One More Thing on Om Malik’s Eddy Cue Rant’" href="http://daringfireball.net/linked/2016/08/11/om-eddy-steve">&#9733;</a>
+</dt>
+<dd>
+<p>Philip Elmer-DeWitt (who was on the same episode of TWIT) transcribed Om Malik&#8217;s rant:</p>
+
+<blockquote>
+  <p>This is coming from the so-called celebrity influx into the
+company, whether it is through the Beats acquisition or Eddy Cue.
+I mean, look at Eddy Cue. The guy was hanging out at the playoffs
+when iCloud was burning. For six hours. You know, he wouldn’t have
+survived a day if Steve was around.</p>
+
+<p>I’m sorry, that’s what gets me worked up about this company. They
+have all these wrong priorities. They want to do entertainment
+content? Buy damn Netflix and move on from there. Do it properly
+if you want to do it. Don’t try to do this stupid penny-ante stuff
+which adds no value to the company. Absolutely none.</p>
+</blockquote>
+
+<p>(DeWitt&#8217;s comment: &#8220;I couldn’t disagree.&#8221;)</p>
+
+<p>I&#8217;ll just point out that Eddy Cue started at Apple in 1989, and reported directly to Jobs while creating and running the iTunes Store, App Store, and iLife suite. You&#8217;re free to argue that Cue is doing a shitty job, but &#8220;he wouldn’t have survived a day if Steve was around&#8221; doesn&#8217;t hold water.</p>
+
+<p>And the whole thing about Cue attending a Golden State Warriors game &#8212; Game One of the NBA Finals &#8212; during <a href="http://www.macrumors.com/2016/06/02/apple-app-store-icloud-outage/">an iCloud outage</a> is nonsense. If Cue had skipped the game, the iCloud outage would not have been fixed a minute sooner. Not one minute.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://om.co/2016/08/11/should-apple-buy-netflix/">Om Malik: Apple Should Buy&#160;Netflix</a>&nbsp;<a class="permalink" title="Permanent link to ‘Om Malik: Apple Should Buy Netflix’" href="http://daringfireball.net/linked/2016/08/11/om-apple-netflix">&#9733;</a>
+</dt>
+<dd>
+<p>Om Malik: </p>
+
+<blockquote>
+  <p>I was on Leo Laporte’s <a href="https://twit.tv/shows/this-week-in-tech/episodes/574?autostart=false">TWIT show yesterday</a> and ended up going
+on a bit of a rant about Apple and “Planet of the Apps.” My view
+on “content” efforts like this is pretty simple. It is
+distracting, non-core to Apple and basically avoids the bigger
+challenges: how to add data and Internet DNA into a company that
+has managed to struggle with services. The App Store needs more
+smarts and better search, and it needs to take a contemporary,
+data-centric approach to surfacing apps. “Planet of the Apps” is
+just an old media-like thinking applied to “apps.” I might be the
+only one who feels that way, but the reality is that these kinds
+of efforts are really not good for Apple at a time when it is
+competing with Google, Amazon and Facebook.</p>
+
+<p>Apple &#8212; if it really wants to get into content and wants to make
+a strong statement to the Hollywood establishment that has stymied
+its television efforts so far &#8212; should make a big, bold bet. It
+should use its massive stock market capitalization and cash hoard
+to buy Netflix.</p>
+</blockquote>
+
+<p>Om is a good friend, so it pains me to say this, but he&#8217;s off his rocker on this one. I&#8217;m as skeptical as anyone about this <em>Planet of the Apps</em> show and why Apple is producing it. But I highly doubt it&#8217;s a distraction for anyone at Apple. It&#8217;s not even shooting in the Bay Area; it&#8217;s shooting in L.A.</p>
+
+<p>Buying Netflix, on the other hand, would be a <em>huge</em> distraction. I&#8217;m not saying it could never happen or would certainly be a bad idea, but Apple&#8217;s services are built to take advantage of its hardware. Netflix is the opposite &#8212; it&#8217;s a service designed to be available on any device with a screen. With iTunes, Apple already has a library of movies and TV shows. If Apple wants to produce original content, they could start their own production company for a tiny fraction of Netflix&#8217;s $42 billion market cap. A fraction.</p>
+
+<p>To me, this reads as Om being bored with Apple, and wanting them to just do something. Saying Apple should buy Netflix is no different than Eric Jackson&#8217;s call two years ago for Apple to start making mega-billion acquisitions. <a href="http://daringfireball.net/2014/02/action_jackson">As I wrote then</a>:</p>
+
+<blockquote>
+  <p><a href="http://daringfireball.net/linked/2014/02/20/facebook-conglomerate">Conglomeration</a> may well work out well for Facebook. General
+Electric has done well with that model for over 100 years. But it
+would be a disaster for Apple. Apple makes acquisitions for
+integration. Exhibit A: <a href="http://en.wikipedia.org/wiki/P.A._Semi">PA Semi</a> &#8212; a chump change $278 million
+acquisition that laid the groundwork for Apple to become the
+leading mobile semiconductor company in the world.</p>
+</blockquote>
+
+</dd>
+
+
+<dt>
+<a href="https://americavoteswithcardsagainsthumanity.com/">America Votes With Cards Against&#160;Humanity</a>&nbsp;<a class="permalink" title="Permanent link to ‘America Votes With Cards Against Humanity’" href="http://daringfireball.net/linked/2016/08/11/cards-against-humanity-votes">&#9733;</a>
+</dt>
+<dd>
+<p>Cards Against Humanity:</p>
+
+<blockquote>
+  <p>Today, we’re letting America choose between two new expansion
+packs about either Hillary Clinton or Donald Trump.</p>
+
+<p>At the end of this promotion, Cards Against Humanity will tally up
+the sales of both packs, and depending on which pack gets more
+support, we will donate all the money in support of Hillary
+Clinton’s campaign.</p>
+</blockquote>
+
+</dd>
+
+
+<dt>
+<a href="http://varianceexplained.org/r/trump-tweets/">Text Analysis of Trump’s Tweets Confirms He Writes Only the (Angrier) Android&#160;Half</a>&nbsp;<a class="permalink" title="Permanent link to ‘Text Analysis of Trump’s Tweets Confirms He Writes Only the (Angrier) Android Half’" href="http://daringfireball.net/linked/2016/08/11/trump-twitter">&#9733;</a>
+</dt>
+<dd>
+<p>Interesting data and semantics analysis by David Robinson, stemming from <a href="https://twitter.com/tvaziri/status/762005541388378112">a casual observation by Todd Vaziri</a> that went hyper-viral.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Wednesday, 10 August 2016</h2>
+<dl class="linkedlist">
+<dt>
+<a href="http://www.theverge.com/2016/8/10/12421074/apple-could-and-probably-should-bundle-wireless-earbuds-with-the-next">On the Economic Feasiblity of Apple Providing Decent Wireless Earbuds With the New&#160;iPhones</a>&nbsp;<a class="permalink" title="Permanent link to ‘On the Economic Feasiblity of Apple Providing Decent Wireless Earbuds With the New iPhones’" href="http://daringfireball.net/linked/2016/08/10/economics-of-wireless-earbuds">&#9733;</a>
+</dt>
+<dd>
+<p>Thomas Ricker, writing for The Verge:</p>
+
+<blockquote>
+  <p>&#8220;I’d prefer ‘good enough’ wireless earbuds included with the
+iPhone,&#8221; says Gruber, &#8220;and ‘amazing’ headphones as the upsell
+product.&#8221;</p>
+
+<p>Same, but that doesn’t mean it’s economically viable for Apple to
+do it. When I first read Gruber’s take a few weeks ago I thought
+bundling an acceptable set of wireless earbuds would be too
+expensive. After all, the most popular models recommended by
+experts start at around $80, and can easily cost more than $200.
+But that was before I received the Meizu EP-51 Bluetooth earbuds
+for testing.</p>
+</blockquote>
+
+<p>These Meizu earbuds cost $28 and are pretty decent. Of <em>course</em> Apple could make something similar. Apple loves profit margins, but institutionally their distaste for wires and cables is even stronger. They might go with Lightning earbuds by default, but they <em>should</em> go wireless. <em>That&#8217;s</em> what justifies removing the standard jack &#8212; not that one port is better than another, but that wireless is better than wired.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.bloomberg.com/news/articles/2016-08-10/apple-said-to-plan-first-pro-laptop-overhaul-in-four-years">Gurman on New MacBook&#160;Pros</a>&nbsp;<a class="permalink" title="Permanent link to ‘Gurman on New MacBook Pros’" href="http://daringfireball.net/linked/2016/08/10/gurman-mbp">&#9733;</a>
+</dt>
+<dd>
+<p>Mark Gurman, writing at Bloomberg:</p>
+
+<blockquote>
+  <p>The new top-of-the-line MacBook Pros will be slightly thinner than
+the current models but are not tapered like the MacBook Air and
+latest 12-inch MacBook, one of the people said. The new MacBook
+Pros have a smaller footprint than current models and the casing
+has shallower curves around the edges. The pressure-sensitive
+trackpad is also slightly wider, the person added.</p>
+</blockquote>
+
+<p>Interesting. I was expecting a tapered design.</p>
+
+<blockquote>
+  <p>The new computers have been in advanced testing within Apple since
+earlier this year, said one of the people, who didn’t want to be
+identified discussing products before their release. The MacBook
+Pros aren’t likely to debut at an event currently scheduled for
+Sept. 7 to introduce next-generation versions of the iPhone,
+according to one of the people. Apple spokesman Bill Evans
+declined to comment.</p>
+</blockquote>
+
+<p>Interesting. I <em>definitely</em> expected them to be announced at the September event, even if they&#8217;re not available for sale until late October or early November. That&#8217;s what Apple did with the iPad Pro last year. If they&#8217;re not announced at the September 7 event, when will they be announced? They could do a smaller event in October, but I was told last year that Apple no longer wanted to do that.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Tuesday,  9 August 2016</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://chrome.googleblog.com/2016/08/flash-and-chrome.html">Chrome Will Start Blocking ‘Behind the Scenes’ Flash Content Next&#160;Month</a>&nbsp;<a class="permalink" title="Permanent link to ‘Chrome Will Start Blocking ‘Behind the Scenes’ Flash Content Next Month’" href="http://daringfireball.net/linked/2016/08/09/chrome-flash">&#9733;</a>
+</dt>
+<dd>
+<p>Anthony LaForge, &#8220;curator of Flash in Chrome&#8221; (talk about a shit job):</p>
+
+<blockquote>
+  <p>Today, more than 90% of Flash on the web loads behind the scenes
+to support things like page analytics. This kind of Flash slows
+you down, and starting this September, <a href="https://groups.google.com/a/chromium.org/forum/#!msg/chromium-dev/QL2K4yFVg_U/vj44YWOaAwAJ">Chrome 53 will begin to
+block it</a>. HTML5 is much lighter and faster, and publishers are
+switching over to speed up page loading and save you more battery
+life. You’ll see an improvement in responsiveness and efficiency
+for many sites. [&#8230;]</p>
+
+<p>In December, Chrome 55 will make HTML5 the default experience,
+except for sites which only support Flash. For those, you’ll be
+prompted to enable Flash when you first visit the site. Aside from
+that, the only change you’ll notice is a safer and more
+power-efficient browsing experience.</p>
+</blockquote>
+
+<p>Finally.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.bloomberg.com/news/articles/2016-08-08/new-iphone-said-to-have-dual-camera-pressure-sensitive-button">Mark Gurman on the New&#160;iPhones</a>&nbsp;<a class="permalink" title="Permanent link to ‘Mark Gurman on the New iPhones’" href="http://daringfireball.net/linked/2016/08/09/gurman-iphone">&#9733;</a>
+</dt>
+<dd>
+<p>Mark Gurman, writing for Bloomberg:</p>
+
+<blockquote>
+  <p>The standout features will be a dual-camera system on the larger
+iPhone, a re-engineered home button that responds to pressure with
+a vibrating sensation rather than a true physical click and the
+removal of the devices’ headphone jack, said the people, who
+didn’t want to be identified discussing unannounced features.
+Apple declined to comment.</p>
+</blockquote>
+
+<p>It sounds like the plus-sized iPhone really will be the only model with the dual lens camera. Depressing if true.</p>
+
+<blockquote>
+  <p>The new iPhones will remove the headphone jack in favor of
+connectivity via Bluetooth and the charging port. That will make
+room for a second speaker, said the people. Apple started allowing
+headphone makers to build headphones that can connect via the
+iPhone’s charger connector in 2014, the same year the company
+acquired headphone maker Beats Electronics.</p>
+</blockquote>
+
+<p>That&#8217;s a dodge around the fact that Gurman apparently does <em>not</em> know what sort of ear buds (if any) Apple is including in the box. The iPhone already supports both Bluetooth and Lightning headphones, but the one that Apple includes in the box is the one that the headphone jack is being replaced <em>in favor of</em>.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.philly.com/philly/blogs/real-time/Philly-TV-legend-Captain-Noah-dies.html">Philadelphia TV Pioneer Captain Noah Dies at Age&#160;90</a>&nbsp;<a class="permalink" title="Permanent link to ‘Philadelphia TV Pioneer Captain Noah Dies at Age 90’" href="http://daringfireball.net/linked/2016/08/09/captain-noah">&#9733;</a>
+</dt>
+<dd>
+<p>Sad local note:</p>
+
+<blockquote>
+  <p>Produced at the Channel 6 studios, the show at its peak was
+syndicated to 22 other stations across the nation. Locally, the
+Magical Ark&#8217;s audience in the early 1970s was larger than <em>Captain
+Kangaroo</em> and <em>Sesame Street</em> combined.</p>
+
+<p>Organist Larry Ferrari provided the music, which included &#8220;Send
+Your Pictures to Captain Noah&#8221; and their theme song, &#8220;I Can Sing a
+Rainbow.&#8221;</p>
+</blockquote>
+
+<p>When I was a kid, Captain Noah was <em>the</em> show to watch. Over 3,600 episodes.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Monday,  8 August 2016</h2>
+<dl class="linkedlist">
+<dt>
+<a href="http://daringfireball.net/feeds/sponsors/">Daring Fireball Sponsorship&#160;Openings</a>&nbsp;<a class="permalink" title="Permanent link to ‘Daring Fireball Sponsorship Openings’" href="http://daringfireball.net/linked/2016/08/08/df-sponsorship-openings">&#9733;</a>
+</dt>
+<dd>
+<p>Couple of openings on the schedule this month, <del>including <em>this</em> week</del>. If you’ve got a product or service you’d like to promote to DF’s savvy audience, <a href="https://daringfireball.net/feeds/sponsors/">get in touch</a> and we&#8217;ll make a deal.</p>
+
+<p><strong>Update:</strong> This week&#8217;s spot just sold, but next week remains available.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://eyeondesign.aiga.org/milton-glaser-analyzes-olympic-logo-design-through-the-ages/">Milton Glaser Analyzes Olympic Logo Design Through the&#160;Ages</a>&nbsp;<a class="permalink" title="Permanent link to ‘Milton Glaser Analyzes Olympic Logo Design Through the Ages’" href="http://daringfireball.net/linked/2016/08/08/glaser-olympics">&#9733;</a>
+</dt>
+<dd>
+<p>Emily Gosling, AIGA:</p>
+
+<blockquote>
+  <p>There’s been much controversy recently around Olympic logo design,
+but let’s not forget the rich and varying narrative the Games’
+graphic design has weaved over the decades. Ahead of Rio 2016, who
+better to cast their eyes and critical judgement over the good,
+the bad, and the ugly of logo design for Olympics past, present,
+and future than Milton Glaser? Here he is.</p>
+</blockquote>
+
+<p>My favorite (and Glaser&#8217;s): Tokyo 1964. Perfect.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://sportsworld.nbcsports.com/alex-rodriguez-retire/">Joe Posnanski on Alex&#160;Rodriguez</a>&nbsp;<a class="permalink" title="Permanent link to ‘Joe Posnanski on Alex Rodriguez’" href="http://daringfireball.net/linked/2016/08/08/a-rod-joe-posnanski">&#9733;</a>
+</dt>
+<dd>
+<p>Nice take by Joe Posnanski on Alex Rodriguez:</p>
+
+<blockquote>
+  <p>And then, impossibly, Rodriguez got better. At 22, he had a
+40-homer, 40-stolen base season and was probably the best player
+in the league again (the MVP went back to Gonzalez but this time
+it didn’t directly affect A-Rod &#8212; he finished a distant ninth in
+the voting). Two years later, Rodriguez added 100 walks to his
+superior shortstop defense, high average, big power &#8212; he was
+again probably the best player in the league. He finished a
+distant third in the MVP voting to Jason Giambi and Frank Thomas,
+a couple of sluggers who didn’t even pretend to play defense.</p>
+
+<p>The lack of respect &#8212; the lack of love &#8212; obviously rankled him.
+At free-agency time, Rodriguez and agent Scott Boras made it clear
+that they had every intention of shaking up the world, every
+desire to let America know that this Alex Rodriguez guy was not a
+great player, he was THE great player, the consummate player, the
+ideal player, better than anyone.</p>
+
+<p>And they signed a deal with Texas that dropped jaws all over the
+country. Through the years, baseball players have set records with
+big deals, but this one was on a whole other level. Even now, 15
+years later, A-Rod’s 10-year, $252 million deal in 2001 ranks as
+the third-largest in baseball history. And one of the two deals
+ahead of it was the one A-Rod himself signed later as an extension
+with the Yankees.</p>
+</blockquote>
+
+<p>A-Rod was the second-best hitter I&#8217;ve watched in my lifetime. The best, of course, was Barry Bonds, whose name is also inextricably linked to PEDs.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.youtube.com/watch?v=5mFpVDpKX70&amp;feature=youtu.be">The Collatz Conjecture</a>&nbsp;<a class="permalink" title="Permanent link to ‘The Collatz Conjecture’" href="http://daringfireball.net/linked/2016/08/08/collatz-conjecture">&#9733;</a>
+</dt>
+<dd>
+<p>Fun little math problem, explained by Professor David Eisenbud in a video by Brady Haran. (I&#8217;m learning Swift, and <a href="https://daringfireball.net/misc/2016/08/Collatz.playground.zip">wrote a little playground</a> to mess around with this. <strong>Update:</strong> <a href="http://daringfireball.net/misc/2016/08/Collatz.swift">Here&#8217;s my code in plain text</a>, too. And <a href="https://twitter.com/cparnot/status/762935168017502208">Charles Parnot posted</a> a <a href="https://gist.github.com/cparnot/69082b542b386482d6ed671a4124ed85">more elegant solution</a>.)</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.fastcompany.com/3062124/tim-cooks-apple/apple-musics-bozoma-saint-john-its-about-passion-not-algorithms">‘Do I Hope Nobody Gets in My Way? They Better&#160;Not.’</a>&nbsp;<a class="permalink" title="Permanent link to ‘‘Do I Hope Nobody Gets in My Way? They Better Not.’’" href="http://daringfireball.net/linked/2016/08/08/fastco-bozoma-saint-john">&#9733;</a>
+</dt>
+<dd>
+<p>Also in Fast Company, Mark Sullivan interviews Apple Music marketing chief Bozoma Saint John:</p>
+
+<blockquote>
+  <p>Q: What can you tell me about what you have learned about race and
+   gender in corporate America? Some women and minorities have
+   described the feeling of having to be twice as good to get
+   where they want to go.</p>
+
+<p>A: I always find that question quite funny, because I don&#8217;t have
+   another experience. The experience I have is this. This body,
+   this is it. I don&#8217;t have anything else to compare it to.
+   Frankly, I think it is unfair to me, if I did it to myself, to
+   say, &#8220;I wonder how this experience has been different to mine?&#8221;
+   It would undercut my own successes and my own passion and my
+   own journey. I really don&#8217;t do that. This experience is what I
+   have. Do I work hard? Hell, yeah. Am I passionate about what I
+   do? Yes. Do I hope I have a future in this? Absolutely. Do I
+   hope nobody gets in my way? They better not.</p>
+</blockquote>
+
+</dd>
+
+
+<dt>
+<a href="http://www.theplayerstribune.com/derek-jeter-ichiro-suzuki-yankees-mariners-3000-hits/">Derek Jeter on Ichiro&#160;Suzuki</a>&nbsp;<a class="permalink" title="Permanent link to ‘Derek Jeter on Ichiro Suzuki’" href="http://daringfireball.net/linked/2016/08/08/jeter-suzuki">&#9733;</a>
+</dt>
+<dd>
+<p>Derek Jeter, commemorating Ichiro joining the 3,000-hit club:</p>
+
+<blockquote>
+  <p>Most of all, I’ve admired Ichiro because he’s a model of
+consistency. In my mind, the most underrated characteristic for
+anyone is consistency. It’s something that gets overlooked until
+it’s gone. I think baseball was always more than just a game to
+him. This was what he was born to do. And most impressive of all,
+the guy’s 42 years old and I can’t remember him ever being on the
+disabled list. He has taken great care of himself. He seems to
+approach baseball like a craft that can never be perfected. I
+don’t think he has a concept of “time off” from the game. It’s his
+life’s work. That starts with working hard all the time, even when
+no one’s looking.</p>
+</blockquote>
+
+<p>He really has been remarkably consistent. What he&#8217;s doing this year is simply extraordinary for a 42-year-old. He looks like he could play for years. (And of course, much <a href="https://www.youtube.com/watch?v=LPazONtQ080">like Jeter did</a>, Ichiro picked up his 3,000th hit <a href="http://m.mlb.com/news/article/194177132/ichiro-suzuki-triples-for-3000th-career-hit/">in spectacular fashion</a>.)</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.fastcompany.com/3062090/tim-cooks-apple/playing-the-long-game-inside-tim-cooks-apple">‘Playing the Long Game Inside Tim Cook’s&#160;Apple’</a>&nbsp;<a class="permalink" title="Permanent link to ‘‘Playing the Long Game Inside Tim Cook’s Apple’’" href="http://daringfireball.net/linked/2016/08/08/tetzeli-apple-fast-company">&#9733;</a>
+</dt>
+<dd>
+<p>Excellent, must-read cover story for Fast Company by Rick Tetzeli (co-author of last year&#8217;s also excellent <em><a href="http://www.amazon.com/exec/obidos/asin/0385347405/ref=nosim/daringfirebal-20">Becoming Steve Jobs</a></em> biography). It&#8217;s about as accurate and insightful as a &#8220;state of Apple&#8221; profile could be. I wish I had written it.</p>
+
+<blockquote>
+  <p>What Apple has accomplished with Maps is an example of the kind of
+grind-it-out innovation that’s happening all the time at the
+company. You don’t hear a lot about it, perhaps because it doesn’t
+support the enthralling myth that innovation comes in blinding
+flashes that lead to hitherto unimaginable products. When critics
+ding Apple for its failure to introduce &#8220;breakthrough&#8221; devices and
+services, they are missing three key facts about technology:
+First, that breakthrough moments are unpredictable outcomes of
+ongoing, incremental innovation; second, that ongoing,
+behind-the-scenes innovation brings significant benefits, even if
+it fails to create singular disruptions; and, third, that new
+technologies only connect broadly when a mainstream audience is
+ready and has a compelling need. &#8220;The world thinks we delivered [a
+breakthrough] every year while Steve was here,&#8221; says Cue. &#8220;Those
+products were developed over a long period of time.&#8221;</p>
+</blockquote>
+
+<p>That one paragraph goes a long way to explaining what Apple really does. Tetzeli also makes a compelling argument that Apple is better positioned on artificial intelligence than any of its competitors, because they&#8217;re the only company that&#8217;s with you <em>everywhere</em> &#8212; from your desk to your wrist to your car.</p>
+
+<p>I spoke to Tetzeli while he was working on this piece, and I&#8217;m quoted a few times. This one begs for an explanation:</p>
+
+<blockquote>
+  <p>Under Cook’s leadership, Apple has come to seem quite fallible to
+many people. Its recent products have seemed far less than
+perfect, at least compared to the collective memory of its
+astonishing iPod–iPhone–iPad run from 2001 to 2010. There are the
+public embarrassments, like its 2012 introduction of Maps, or
+those 2014 videos of reviewers bending, and breaking, an iPhone 6
+Plus. Apple Pay hasn’t become the standard for a cashless society,
+and the Apple Watch &#8220;is not the watch we expect from Apple,&#8221;
+according to John Gruber, editor of Daring Fireball, the
+preeminent Apple-centric website. Then there are the design flaws:
+Apple Music has been saddled with too many features, as if it were
+something designed by, God forbid, Microsoft; the lens on the back
+of the iPhone 6 extrudes; the new Apple TV has an illogical
+interface and confusing remote control.</p>
+</blockquote>
+
+<p>If I recall correctly, the context of that remark was related to the Sport/steel/Edition tiering of the Apple Watch product lineup &#8212; particularly the $10,000-and-up Edition models. But it could have just as easily been about the slowness of the software. In hindsight &#8212; especially now that we&#8217;ve seen the zippy WatchOS 3 &#8212; Apple Watch was released before it was ready, which is un-Apple-like.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://appleinsider.com/articles/16/08/07/apple-watch-2-with-gps-barometer-better-waterproofing-more-to-launch-in-2h">Ming-Chi Kuo: ‘Apple Watch 2’ With GPS, Barometer, Better&#160;Waterproofing</a>&nbsp;<a class="permalink" title="Permanent link to ‘Ming-Chi Kuo: ‘Apple Watch 2’ With GPS, Barometer, Better Waterproofing’" href="http://daringfireball.net/linked/2016/08/08/ming-chi-kuo-apple-watch">&#9733;</a>
+</dt>
+<dd>
+<p>Mikey Campbell, writing for AppleInsider:</p>
+
+<blockquote>
+  <p>Well-connected KGI analyst Ming-Chi Kuo in a note to investors on
+Sunday, obtained by AppleInsider, detailed Apple&#8217;s wearable
+timeline for the coming six months.</p>
+
+<p>Kuo believes Apple is planning to launch two new Apple Watch
+versions in the second half of 2016, both of which offer moderate
+improvements over their predecessor. The first unit will be an
+iterative upgrade on the original Apple Watch and is expected to
+sport the same aesthetics, but with improved intervals like a TSMC
+processor built on the 16nm process. Waterproofing should also be
+slightly improved.</p>
+
+<p>A second version, dubbed &#8220;Apple Watch 2,&#8221; is also expected to
+share the same general design as current models, but will include
+a GPS radio and barometer for improved geolocation capabilities. A
+higher capacity battery will be included to power the advanced
+components, but its size will prohibit Apple&#8217;s usual generational
+device slimming.</p>
+</blockquote>
+
+<p>I can see Apple keeping the original Apple Watch models around (Sport edition only?) at lower prices. That&#8217;s what Apple does with old generations &#8212; keep them around at lower prices. But it doesn&#8217;t make any sense to me that they would both introduce a second generation model <em>and</em> upgrade the first generation model. Especially if they look the same.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://www.youtube.com/watch?v=aEK37MBTUPk">Google Photos ‘Free Up Space’&#160;Commercial</a>&nbsp;<a class="permalink" title="Permanent link to ‘Google Photos ‘Free Up Space’ Commercial’" href="http://daringfireball.net/linked/2016/08/08/google-photos-sick-burn">&#9733;</a>
+</dt>
+<dd>
+<p>Do you smell smoke? That&#8217;s the aroma of a sick burn wafting out of Cupertino. This Google Photos commercial is running during the Olympics, and it absolutely nails Apple right where they deserve to be nailed. This commercial is going to turn millions of people with 16 GB iPhones into Google Photos users. Running out of space is <a href="https://twitter.com/BenBajarin/status/762519342357504000">a real problem that real people face</a> &#8212; and once storage gets tight, it will remain tight until you get a new phone.</p>
+
+<p><strong>Update:</strong> In addition to 16 GB iPhones, Apple&#8217;s other problem is the meager 5 GB limit for the free tier of iCloud. I think the $1/month 50 GB plan is a great deal. It ought to be a no-brainer for anyone who can afford an iPhone in the first place. But there are a lot of people who simply won&#8217;t budge from &#8220;free&#8221;, even if it means putting up with the daily annoyance of warnings about storage limits being hit. I realize Apple is building up its &#8220;services&#8221; as a profit center, but 5 GB just isn&#8217;t enough for the free tier.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Friday,  5 August 2016</h2>
+<dl class="linkedlist">
+<dt>
+<a href="http://deals.macupdate.com/?utm_source=bundles&amp;utm_medium=ads&amp;utm_content=daringfireball&amp;utm_campaign=july_2016">MacUpdate’s Summer Mac App&#160;Bundle</a>&nbsp;<a class="permalink" title="Permanent link to ‘MacUpdate’s Summer Mac App Bundle’" href="http://daringfireball.net/linked/2016/08/05/macupdate-summer-mac-app-bundle">&#9733;</a>
+</dt>
+<dd>
+<p>My thanks to MacUpdate for sponsoring this week&#8217;s DF RSS feed to promote their Summer Mac App Bundle. It includes brand new releases of Toast 15 Titanium, Folx 5 Pro, Myriad 4, and free upgrades for the soon-to-be-released WALTR 2 and Disk Drill Pro 3. </p>
+
+<p>For visual artists, the bundle includes Corel Aftershot and Next Flipbook Maker. Nerdy utilities include iStat Menus and DaisyDisk. (Daisy Disk is my personal favorite for analyzing disk usage on the Mac. It&#8217;s a beautiful app.) </p>
+
+<p>As always with MacUpdate&#8217;s bundles, it&#8217;s a great value. The retail value for all these apps is over $500 &#8212; with this bundle, you get them all for just $49.99. Act now: there are only four days left in the promotion.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://medium.com/@jsaito/making-a-case-for-letter-case-19d09f653c98#.rhra2vo7t">Title Case vs. Sentence Case in UI&#160;Labeling</a>&nbsp;<a class="permalink" title="Permanent link to ‘Title Case vs. Sentence Case in UI Labeling’" href="http://daringfireball.net/linked/2016/08/05/title-case-vs-sentence-case">&#9733;</a>
+</dt>
+<dd>
+<p>John Saito:</p>
+
+<blockquote>
+  <p>If you’re an Apple user, you’ll notice a lot of title case
+throughout their products. That’s because <a href="http://developer.apple.com/design">Apple’s design
+guidelines</a> recommend title case for many UI elements, including
+alert titles, menu items, and buttons.</p>
+
+<p>If you’re a Google user, you’ll see a lot more sentence case
+throughout their products. And that’s because <a href="https://material.google.com/">Google’s design
+guidelines</a> recommend sentence case for almost everything.</p>
+</blockquote>
+
+<p>A subtle but telling difference between Apple and Google. Culturally, Apple is fussier; Google is more casual.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.bloomberg.com/news/articles/2016-08-04/food-startup-ran-undercover-project-to-buy-up-its-own-products">Hampton Creek Ran Undercover Project to Buy Up Its Own Vegan&#160;Mayo</a>&nbsp;<a class="permalink" title="Permanent link to ‘Hampton Creek Ran Undercover Project to Buy Up Its Own Vegan Mayo’" href="http://daringfireball.net/linked/2016/08/05/hampton-creek-mayo-scam">&#9733;</a>
+</dt>
+<dd>
+<p>Outstanding reporting by Olivia Zaleski for Bloomberg:</p>
+
+<blockquote>
+  <p>In late 2014, fledgling entrepreneur Josh Tetrick persuaded
+investors to plow $90 million into his vegan food startup Hampton
+Creek Inc. Tetrick had impressed leading Silicon Valley venture
+capital firms by getting his eggless Just Mayo product into
+Walmart, Kroger, Safeway, and other top U.S. supermarkets within
+about three years of starting his company.</p>
+
+<p>What Tetrick and his team neglected to mention is that the startup
+undertook a large-scale operation to buy back its own mayo, which
+made the product appear more popular than it really was. At least
+eight months before the funding round closed, Hampton Creek
+executives quietly launched a campaign to purchase mass quantities
+of Just Mayo from stores, according to five former workers and
+more than 250 receipts, expense reports, cash advances and e-mails
+reviewed by Bloomberg. In addition to buying up hundreds of jars
+of the product across the U.S., contractors were told to call
+store managers pretending they were customers and ask about Just
+Mayo. Strong demand for a product typically prompts retailers to
+order more and stock it in additional stores.</p>
+</blockquote>
+
+<p>That is fraud. (And it should have been unnecessary: <a href="http://www.seriouseats.com/2014/02/vegan-mayonnaise-taste-test-produces-surprising-results.html">Just Mayo apparently tastes great</a>.)</p>
+
+<p>Also, don&#8217;t miss the wonderful animated illustration by Steph Davidson accompanying the article.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.macworld.com/article/3104052/ios/new-emoji-add-gender-parity-and-a-more-realistic-drawing-style-in-ios-10-and-macos-sierra.html">Glenn Fleishman Examines What’s New in Apple’s&#160;Emoji</a>&nbsp;<a class="permalink" title="Permanent link to ‘Glenn Fleishman Examines What’s New in Apple’s Emoji’" href="http://daringfireball.net/linked/2016/08/05/fleishman-emoji">&#9733;</a>
+</dt>
+<dd>
+<p>Emoji week continues on Daring Fireball. Glenn Fleishman, writing for Macworld:</p>
+
+<blockquote>
+  <p>As part of this update, Apple has also redrawn most faces and
+figures, among other changes. For the quasi-figurative
+smiley-style emoji, the changes are very slight. In most cases,
+you need to zoom way in to see them, although the subtle effects
+remain noticeable on a Retina or 4K display. Smileys now have a
+slightly different light source, with a more intense “hottest”
+point at the top, some lines are thinner, and the 3D effect is
+slightly more pronounced.</p>
+</blockquote>
+
+<p>The way I&#8217;d describe it is that the old Pac-Man-style faces had an Aqua-like high-gloss texture. The new ones are no longer glossy.</p>
+
+<p>Here&#8217;s my beef: Why isn&#8217;t Apple yet supporting <a href="http://emojipedia.org/tumbler-glass/">the tumbler glass</a>?</p>
+
+</dd>
+
+
+<dt>
+<a href="https://sixcolors.com/post/2016/08/least-loved-emojis/">Top 10 Least-Loved&#160;Emojis</a>&nbsp;<a class="permalink" title="Permanent link to ‘Top 10 Least-Loved Emojis’" href="http://daringfireball.net/linked/2016/08/05/snell-emoji">&#9733;</a>
+</dt>
+<dd>
+<p>Jason Snell:</p>
+
+<blockquote>
+  <p>I love emoji. But some emojis are more equal than others. I’d
+wager that there are 100 really popular emojis, and maybe 300
+moderately popular ones. Every now and then, while flipping
+through my iPad emoji keyboard, I would find a symbol that would
+make me do a double-take and ask myself, “Why is this an emoji?”</p>
+
+<p>There are now around a thousand base emojis and tens of thousands
+of variations. One day, in a dark mood, I wondered: What are the
+least-loved emojis? I checked out the live stats on
+<a href="http://emojitracker.com/">emojitracker.com</a> and asked Jeremy Burge of <a href="http://emojipedia.org/">Emojipedia</a> for
+his site’s least-favorite emojis. The result is this list: The
+world’s least-loved emojis.</p>
+</blockquote>
+
+</dd>
+
+
+<dt>
+<a href="http://watchaware.com/post/17647/why-i-think-apple-watch-2-will-be-a-big-leap">Speculating on Apple Watch&#160;2</a>&nbsp;<a class="permalink" title="Permanent link to ‘Speculating on Apple Watch 2’" href="http://daringfireball.net/linked/2016/08/05/ibrahim-apple-watch-2">&#9733;</a>
+</dt>
+<dd>
+<p>Abdel Ibrahim:</p>
+
+<blockquote>
+  <p>By the time Apple unveils the Apple Watch 2, it will probably be
+nearly 24 months since the original made its debut. Think about
+that for a second. What can Apple do in 24 months when it controls
+the whole stack? Answer: A LOT.</p>
+
+<p>Look past how an iPhone looks and think about what happens in 24
+months. Virtually everything changes. RAM, processor, screen
+technology, cameras, sensors, even materials. Compare an iPhone 5s
+to an iPhone 6s and it’s a night and day difference in terms of
+performance and technology. This is the type of leap I’m expecting
+this fall with the Watch.</p>
+
+<p>I don’t think the industrial design is going to change
+drastically, but I do think it will change. I wouldn’t be
+surprised to see the Watch get a tad thinner. I also think Apple
+may do some interesting new finishes with the Sport model, which
+has clearly become the go-to Watch for most of us. Everything will
+be improved, I think, from the Taptic Engine to the display cover.</p>
+</blockquote>
+
+<p>I get why there&#8217;s so much speculation about the new iPhones &#8212; it&#8217;s the most successful consumer product in the world. But I find it curious that there&#8217;s so <em>little</em> speculation about the second generation Apple Watch lineup. And no supply chain leaks either.</p>
+
+<p>Joanna Stern and I talked about this at length on <a href="http://daringfireball.net/thetalkshow/2016/07/31/ep-163">the latest episode of my podcast</a>, and <a href="https://twitter.com/JoannaStern/status/761561747970985984">she predicts</a> an increased focus on health and fitness features &#8212; if only because Apple has learned that those are a major reason people are buying Apple Watches today.</p>
+
+</dd>
+
+
+</dl>
+
+<hr class="ookiaks" />
+
+
+<div class="article">
+<h1><a href="http://daringfireball.net/2016/08/apple_gun_emoji" title="Permanent link to ‘Apple and the Pistol Emoji’">Apple and the Pistol&#160;Emoji</a></h1>
+<h6 class="dateline">Thursday,  4 August 2016</h6>
+
+<p><a href="http://blog.emojipedia.org/apple-and-the-gun-emoji/#fnref:1">Jeremy Burge, founder of Emojipedia</a>:</p>
+
+<blockquote>
+  <p>Apple: Don&#8217;t change the pistol emoji. At least not today.</p>
+
+<p><em>Hide it.</em></p>
+
+<p>Unicode does not deprecate emojis, but there is no requirement to
+show all approved emojis on the keyboard.</p>
+
+<p>The pistol emoji could be removed from the iOS emoji keyboard
+without causing any cross platform compatibility issues.</p>
+</blockquote>
+
+<p>His argument against changing it to a toy water pistol is that it would convey extremely different meanings on different platforms.</p>
+
+<p><a href="http://benjaminmayo.co.uk/apple-gun-emoji-water-pistol">Ben Mayo makes the same argument as Burge</a>:</p>
+
+<blockquote>
+  <p>Rather than recycle the same character code point, here’s what I
+think Apple should have done. Remove the pistol emoji from Apple’s
+keyboard completely. Lobby the Unicode consortium to add a new
+emoji that depicts a ‘water pistol toy’ and include that in the
+keyboard.</p>
+
+<p>This handling is better because it does not affect usage of the
+handgun emoji on other clients, Apple would just be disabling the
+ability to write it on its systems. The water gun emoji would then
+be true to itself with a unique code, a consistent depiction of a
+toy water pistol across all platforms that support the latest
+Unicode standard and the correct labelling for VoiceOver
+accessibility.</p>
+</blockquote>
+
+<p>This is a tricky dilemma, but I think it&#8217;ll all work out, and other vendors will follow Apple&#8217;s lead and this glyph will be represented by a toy gun everywhere within a few years. Hiding the pistol from the emoji keyboard is timid. Changing it to a toy is a statement, indicating that Apple wants no part of the gun culture here in the U.S. I support Apple changing this glyph to a toy &#8212; but if they do otherwise, they should drop the glyph completely, and display the &#8220;missing glyph&#8221; box for the pistol&#8217;s code point. (Ironically, Microsoft switched Windows&#8217;s pistol emoji from a toy ray gun to a realistic revolver <a href="http://blog.emojipedia.org/diverse-emoji-families-come-to-windows/#fnref:3">just this week</a>. Microsoft just can&#8217;t catch a break lately &#8212; even when they&#8217;re ahead of the curve they find a way to fall behind.)</p>
+
+<p>While I&#8217;m on it, I&#8217;ve heard from a little birdie that Apple&#8217;s new water pistol glyph was in fact <a href="http://daringfireball.net/linked/2016/08/01/ios-10-emoji">changed from left-pointing to right-pointing</a>, but only in internal-to-Apple builds of iOS. The idea was to make the water pistol pair well with the &#8220;splashing sweat&#8221; symbol (&#x1F4A6;), which to date has been rendered left-to-right. But because flipping the gun direction changes the meaning when it&#8217;s paired with any other emoji to its left, it was decided that it would be easier to flip the direction of the splashing emoji and leave the pistol left-pointing. If Apple does change the splash direction, it will also pair better with the much-beloved eggplant (&#x1F346;).&nbsp;<a class="permalink" title="Permanent link to ‘Apple and the Pistol Emoji’" href="http://daringfireball.net/2016/08/apple_gun_emoji">&#9733;</a></p>
+
+</div> <!-- article -->
+
+<hr class="ookiaks" />
+
+
+
+812
+<div id="Footer">
+<form id="SiteSearch" action="https://daringfireball.net/search" method="get" style="margin-bottom: 2.5em;">
+<div>
+<input name="q" type="text" value="" style="margin-right: 8px; width: 66%;" />
+<input type="submit" value="Search" />
+</div>
+</form>
+
+<p class="smallprint">
+<a href="/preferences/" title="Customize the font size and presentation options for this web site.">Display Preferences</a>
+<br /><br />
+Copyright &copy; 2002–2016 The Daring Fireball Company LLC.
+</p>
+</div>
+
+<div id="SidebarTheDeck">
+<script type="text/javascript">
+// <![CDATA[
+	(function(id) {
+		document.write('<script type="text/javascript" src="' +
+			'//connect.decknetwork.net/deck' + id + '_js.php?' +
+			(new Date().getTime()) + '"></' + 'script>');
+	})("DF");
+	var deckDiv = document.getElementById("SidebarTheDeck");
+	var sidebarDiv = document.getElementById("Sidebar");
+	sidebarDiv.appendChild(deckDiv);
+// ]]>
+</script>
+
+<p id="ViaTheDeck"><a href="http://decknetwork.net/">
+<img src="//daringfireball.net/graphics/madison/via_the_deck.png"    alt="Ads via The Deck" class="the_deck_promo" width="70" />
+<span>Ads via The Deck</span>
+</a></p>
+
+</div>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-593949-1']);
+  _gaq.push (['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- Asynchronously load Mint -->
+<script type="text/javascript">
+(function () {
+	var ma = document.createElement('script');
+	ma.type = 'text/javascript';
+	ma.src = '/mint/?js';
+	ma.async = true;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ma, s);
+})();
+</script>
+</div> <!-- Main -->
+
+</div> <!-- Box -->
+</body>
+</html>
+<!-- 0.0005 seconds -->
+
+0
+
+Connection closed by foreign host.
+Julios-MacBook-Pro:~ Julio$ telnet daringfireball.net 80
+Trying 199.192.241.217...
+Connected to daringfireball.net.
+Escape character is '^]'.
+GET /graphics/logos/ HTTP/1.1
+Host: daringfireball.net
+
+HTTP/1.1 200 OK
+Date: Fri, 19 Aug 2016 20:30:33 GMT
+Server: Apache
+Served-By: Joyent
+Vary: Accept-Encoding
+Content-Length: 2840
+Connection: close
+Content-Type: image/png
+
+?PNG
+
+IHDR??P?PLTE?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????5?v?tRNSG?m
+                                                    *???#?
+??R??`???̐?e??B?q[??W?&??⨅?yL7?=u??3k.??,???	?IDATx^???J?`?Q?4XӬls?J'?'=???U?????+?s
+       'Ҩ?`?A? ?`?A?x
+                     ?A? 
+                         ?O???m?V?S?x??4&ǋ???^?@p??|?????d???S?R=?????F?ǋ;V??;?"?Y?J"???{leF?'???C2??[??D?8Ƙ??NxB?TP*???,VN2_?*)?E?????^&s??i?@??%lf
+                                   ?)!
+C?;x???m????hZ??!⫃??K?,?3y??e>????e?????&?%?=?h<??$?Q`hؓU?{:gr??P??X??g?t54??#??-?k8a?z?zǅ?
+          `9?K?EB
+??5?%??          59???F?K*@??F??,?6??
+       `???	1??:`?E??_e~?d5??`?m?<???(?D?8?r???}?6???~.J$?
+                                                              `???????a???'???%?p?&??M[????_??L??o?_"?=ްy`??>?c??p?e?5I]NO
+                                         ,-x?ј??Ɓ????l8E7lx??Vn?ERa??-S?	d?e}͙?????Ãk[q?@W??j?l*?B7lxE? ?M_?JЇp???>???
+                                           w
+                                            -?L????,??Ȧ>Ȇ?'?]I@,$???[*???Gr????|
+                                                                               `?"?????r???70ްI` H,?h??4C^?5.?VYdCl?j?<0
+                    ?	G4?c)c<`?xz??x?f??EQ%'????Q?
+                                                   ?????p?x??D??;??X??)??`ϝ??>X?؂d?a????rߎ>?'?`xwV?????Y?/?ߑ?-tT?????U&#?j????	ڦ?Q5?㦔???
+???w?O?`?u?y???k'wZ4$6<?YJ7?o?	z۱??t?ȗSZwf0?k&0?&??????
+  ??޷???,??㱾R$?J?
+                  S?D?
+?a??e???0??uX?Yg?z????????]??PM4?-?????=????OZ?
+                                               ޫ?;?R??????g?		
+                                                                        ??Ѱq?T?
+                                                                               ?]5?3??xt?????9???ލ.?&po%Ѱq?TclO~՘??+?HV?Q?qW
+                                            ܅x
+dvG??-?%@4l8-??P?ѓĢ??^??B|\???q?Jh?c|`?J]M???rJ?,&?؜?e????c^?"%?)`Q2LW
+                                                                      ,??L4l???e?
+ >?_8?E?ŕ,?(90¬u?-C?t5??Ih?Ɓ?0?|?J???????_??>??jN8??x??G??L5l????ɄW?w&8??~-0?
+                                                                             wL4l??ĺd?ca??p?
+            ?|??T?Ɓm?)??????^r?/?L5l8N??"2?p?%c0$?-0հy?.6????D?????"?~?s`?a???&?5?7??
+     ?B???+/??p?/w	lA2հ1`Z???˧?v3?^.,p?
+?~CZ??ͤ?y?'?                                 ?A??\`ѾG?$S
+           ??
+             ?s??Cf????^???޿?I??-??[N??4
+                                        )c?I??`u?"????դ~????dr??8<????̸?L????0??N??z`?`?<,H.0]MD?=ݰy`??<?o~3-??ൊ?????ߞ݅?*p	??
+                                                  ?p_B???j"o?B7l????R&??N?ׄ?r?fm?T??????#w????ۉ`?&?n?$0??ʒ|??:?;?d37B??ާT]??\?`????`?&?Fhچ?????O1 ꯛm=?[?V?]??? ?o:????~`1?t5?2?	??;?s??{?wi? ?????4???`{???0]M??H?o,?ϦomIE???Nƨ??z?P????E[]K?֛?4?1??Z??h~?js7;	@?
+          ???oqa???Nr?W8???U?-????????Σg+?̵/?H? ??ff6?I?Jo??W,?<5K???Y?G?X٭????;????r??Rkc?z?V>X???*??r??R????q-,?%?~??n%\X?????a?-\?Z??e9?K;?~?
+                                                               ?C?jQ??j6?? 0
+                                                                           ?? L`?A`&0
+    ?? 0
+       ?2|b5(Sa?IEND?B`?Connection closed by foreign host.
+
+Julios-MacBook-Pro:~ Julio$ telnet daringfireball.net 80
+Trying 199.192.241.217...
+Connected to daringfireball.net.
+Escape character is '^]'.
+GET /graphics/logos1/ HTTP/1.1
+Host: daringfireball.net
+
+HTTP/1.1 404 Not Found
+Date: Fri, 19 Aug 2016 20:34:06 GMT
+Server: Apache
+Served-By: Joyent
+Vary: Accept-Encoding
+Content-Length: 5350
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Daring Fireball: Error: Page Not Found</title>
+	<meta name="viewport" content="width=500, minimum-scale=0.45" />
+	<link rel="apple-touch-icon-precomposed" href="/graphics/apple-touch-icon.png" />
+	<link rel="shortcut icon" href="/graphics/favicon.ico?v=005" />
+	<link rel="mask-icon" href="/graphics/dfstar.svg" color="#4a525a">
+	<link rel="stylesheet" type="text/css" media="screen"  href="/css/fireball_screen.css?v1.7" />
+	<link rel="stylesheet" type="text/css" media="screen"  href="/css/ie_sucks.php" />
+	<link rel="stylesheet" type="text/css" media="print"   href="/css/fireball_print.css?v01" />
+	<link rel="alternate" type="application/atom+xml" href="/feeds/main" />
+	<script src="/js/js-global/FancyZoom.js" type="text/javascript"></script>
+	<script src="/js/js-global/FancyZoomHTML.js" type="text/javascript"></script>
+	<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+<body>
+<div id="Box">
+
+<a href="/" title="Daring Fireball: Home"><img src="/graphics/logos/" alt="Darin<div id="Sidebar">="56" /></a>
+<p>By <strong>John&nbsp;Gruber</strong></p>
+
+<ul><!--&#9733;-->
+<li><a href="/archive/" title="Previous articles.">Archive</a></li><li><script type="text/javascript">
+// <![CDATA[
+function ReadCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0; i < ca.length; i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1, c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+	}
+	return null;
+}
+var display_linked_list = ReadCookie('displayLinkedList');
+var li_linked = '<a href="/linked/" title="The Linked List.">Linked List<\/a>';
+if (display_linked_list == "hide") {
+	// Linked List is off on home page, so show it in menu:
+	document.write(li_linked + "<\/li>\n<li>");
+}
+else {
+	// Default to not putting separate LL item in sidebar:
+}
+// ]]>
+</script></li>
+<li><a href="/thetalkshow/" title="The world’s most popular podcast.">The Talk Show</a></li>
+<li><a href="http://vesperapp.co/" title="A simple, elegant iOS app for collecting notes, ideas, thoughts, and images.">Vesper</a></li>
+<li><a href="/projects/" title="Software projects, including SmartyPants and Markdown.">Projects</a></li>
+<li><a href="/contact/" title="How to send email regarding Daring Fireball.">Contact</a></li>
+<li><a href="/colophon/" title="About this site and the tools used to produce it.">Colophon</a></li>
+<li><a href="/feeds/">RSS Feed</a></li>
+<li><a href="https://twitter.com/daringfireball">Twitter</a></li>
+<li><a href="/feeds/sponsors/">Sponsorship</a></li>
+</ul>
+
+</div> <!-- Sidebar -->
+
+<div id="Main">
+<div class="article">
+
+<h1 style="font-family: 'Hoefler Text', Georgia, Times New Roman;  font-weight: normal;  font-size: 160px;  margin: 0;  line-height: 100px;  padding-bottom: 75px;">
+404
+</h1>
+
+<p>The requested URL does not exist on Daring Fireball:</p>
+
+<p style="margin-left: 2em;"><code>/graphics/logos1/</code></p>
+
+<p>Sorry about that.</p>
+
+</div> <!-- article -->
+<div id="Footer">
+<form id="SiteSearch" action="https://daringfireball.net/search" method="get" style="margin-bottom: 2.5em;">
+<div>
+<input name="q" type="text" value="" style="margin-right: 8px; width: 66%;" />
+<input type="submit" value="Search" />
+</div>
+</form>
+
+<p class="smallprint">
+<a href="/preferences/" title="Customize the font size and presentation options for this web site.">Display Preferences</a>
+<br /><br />
+Copyright &copy; 2002–2016 The Daring Fireball Company LLC.
+</p>
+</div>
+
+<div id="SidebarTheDeck">
+<script type="text/javascript">
+// <![CDATA[
+	(function(id) {
+		document.write('<script type="text/javascript" src="' +
+			'//connect.decknetwork.net/deck' + id + '_js.php?' +
+			(new Date().getTime()) + '"></' + 'script>');
+	})("DF");
+	var deckDiv = document.getElementById("SidebarTheDeck");
+	var sidebarDiv = document.getElementById("Sidebar");
+	sidebarDiv.appendChild(deckDiv);
+// ]]>
+</script>
+
+<p id="ViaTheDeck"><a href="http://decknetwork.net/">
+<img src="//daringfireball.net/graphics/madison/via_the_deck.png"    alt="Ads via The Deck" class="the_deck_promo" width="70" />
+<span>Ads via The Deck</span>
+</a></p>
+
+</div>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-593949-1']);
+  _gaq.push (['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- Asynchronously load Mint -->
+<script type="text/javascript">
+(function () {
+	var ma = document.createElement('script');
+	ma.type = 'text/javascript';
+	ma.src = '/mint/?js';
+	ma.async = true;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ma, s);
+})();
+</script>
+
+</div> <!-- Main -->
+
+</div> <!-- box -->
+</body>
+</html>
+Connection closed by foreign host.
+Julios-MacBook-Pro:~ Julio$ 
