@@ -1,0 +1,7 @@
+Ejercicio multiple_web_servers
+
+¿Se puede tener dos servidores web instalados y activos en un mismo equipo? Si la respuesta es afirmativa ¿cómo harían para diferenciar cuáles peticiones de los clientes le pertenece a cada uno?
+
+Respuesta:
+
+Si se puede mientras cada uno esté escuchando un puerto diferente. Entonces se configura uno para que use el puerto defult (80) y el otro se pone a escuchar cualquier otro puerto. Hay que especificar entonces en el url cual puerto usar, ie, localhost:8080 para el segundo servidor.
