@@ -1,0 +1,7 @@
+Ejercicio refresh_http_session
+
+Un usuario tiene cargada una página web y presiona el botón de refrescar. ¿Cómo debería el navegador web implementar esta operación? ¿Existe algún mecanismo eficiente para reducir el tráfico de red?
+
+Respuesta:
+
+Un navegador puede preguntarle al servidor web si los recursos que va a refrescar de nuevo han sido cambiados desde la última vez que los accesó, si solo algunos fueron cambiados, baja esos de nuevo y usa los otros no cambiados desde caché. Si ninguno cambió, entonces carga la página desde caché de nuevo.
