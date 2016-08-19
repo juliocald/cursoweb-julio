@@ -1,0 +1,13 @@
+Ejercicio web_server_selection
+
+Una empresa con bastantes años en el mercado pero sin presencia en internet, le contrata para crear su sitio web. ¿Qué preguntas haría al personal de la empresa con el fin de decidir cuál servidor web recomendar? Idee un par de escenarios. Los escenarios pueden tener esta estructura: "si las respuestas del personal fueran a y b, entonces el servidor recomendable sería w por esta razón: x".
+
+Respuesta:
+
+1. Si las respuestas del personal fueran que lo más importante en su sitio web es la velocidad de acceso, de uso libre y *nada* más, entonces el servidor recomendable sería lighttpd porque tiene como prioridad dar un muy alto rendimiento.
+
+2. Si las respuestas del personal fueran que necesita acoplarse con todo el entorno de IT basado en Microsoft Windows y no les importa pagar por ello, entonces el servidor recomendable sería Internet Information Services de Microsoft porque al ser hecho por Microsoft da mayor facilidad para integrarse a ambientes exclusivos de Windows.
+
+3. Si las respuestas del personal fueran que necesita algo promedio, de uso libre, fácil de instalar y con características básicas (así como otras más avanzadas por si en un futuro se necesitan) y quieren tener buena referencia en línea con un servidor popular, entonces el servidor recomendable sería Apache HTTP Server porque es multiplataforma, tiene muchas características y es muy popular, lo que ayuda a encontrar respuestas fáciles y una gran comunidad de soporte.
+
+4. Si las respuestas del personal fueran que necesita algo rápido, libre, pero sin tantas características para aumentar el rendimiento, la respuesta sería nginx por ser de uso libre, tener alto rendimiento y un bajo consumo de recursos ideal para servidores no tan potentes.
