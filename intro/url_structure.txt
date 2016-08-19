@@ -1,0 +1,53 @@
+Ejercicio url_structure
+
+Identifique y señale en los siguientes ejemplos hipotéticos, cada una de las partes del URL:
+
+http://www.amazon.com/
+
+Esquema   :http:
+Servidor  :amazon.com
+Puerto    :80
+Ruta      :-
+Parámetros:-
+Fragmento :-
+Usuario   :-
+
+http://www.w3.org/TR/html401/struct/tables.html#edef-CAPTION
+
+Esquema   :http:
+Servidor  :w3.or
+Puerto    :80
+Ruta      :/TR/html401/struct/tables.html
+Parámetros:-
+Fragmento :#edef-CAPTION
+Usuario   :-
+
+http://acme.co.cr:8080/index.php
+
+Esquema   :http:
+Servidor  :acme.co.cr
+Puerto    :8080
+Ruta      :/index.php
+Parámetros:-
+Fragmento :-
+Usuario   :-
+
+https://24.168.39.221/cgi-bin/book?id=4596098&action=remove
+
+Esquema   :https:
+Servidor  :24.168.39.221
+Puerto    :443
+Ruta      :/cgi-bin/book
+Parámetros:?id=4596098&action=remove
+Fragmento :-
+Usuario   :-
+
+ftp://msoto:w33n8rf1@down.antivirus.net/current/setup.exe
+
+Esquema   :ftp:
+Servidor  :down.antivirus.net
+Puerto    :21
+Ruta      :/current/setup.exe
+Parámetros:-
+Fragmento :-
+Usuario   :msoto
