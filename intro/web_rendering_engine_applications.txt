@@ -1,0 +1,11 @@
+Ejercicio web_rendering_engine_applications
+
+Provea tres ejemplos de aplicaciones de escritorio o de móvil que podrían beneficiarse de utilizar un web rendering engine. Indique rápidamente para qué lo utilizarían.
+
+Respuesta:
+
+1. Editor de texto Sublime Text: se beneficiaría estando en un navegador con un motor ya que así se podría editar código sin importar la plataforma, aún estando lejos de casa y quizá hasta integrándose con un servicio de almacenamiento remoto donde se puedan accesar los archivos.
+
+2. iStudiez Pro: es casi lo mismo del ejemplo anterior, al tener interfaz en un navegador web sería verdaderamente multiplataforma ya que solo está para macOS y iOS.
+
+3. Apple Music: actualmente solo corre dentro de iTunes en una Mac o PC, o dentro de su propia app en iOS y Android. Si se pasara a interfaz web, uno se podría ahorrar la tediosa tarea de instalar iTunes entero (que es un programa bastante pesado), solo por querer usar Apple Music (Spotify ya tiene reproductor web).
