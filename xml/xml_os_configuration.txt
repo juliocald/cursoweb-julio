@@ -1,0 +1,9 @@
+Ejercicio xml_os_configuration
+
+En los sistemas operativos basados en Unix, es común que los programas guarden su configuración en archivos de texto. Por ejemplo, la configuración de dispositivos y particiones se configura en /etc/fstab, los programas a ejecutar de forma periódica en /etc/crontab; el intérprete de comandos Bash guarda su configuración en un archivo oculto .bashrc en la carpeta del usuario, el servidor web Apache en varios archivos de texto en la carpeta /etc/apache2, el servidor de SSH en /etc/ssh/; entre muchos otros. Cada uno de estos programas utilizan una notación diferente para representar su configuración. Liste ventajas y desventajas si todos estos programas utilizaran notación XML para representar sus configuraciones.
+
+Respuesta:
+
+Ventajas: un solo parser podría leer todos los archivos de configuración. Habría solo una estructura necesaria de aprender para cualquier configuración existente.
+
+Desventajas: si un programa necesita más detalle en su configuración, puede que no sea posible describirla porque la convención no se lo permite. Puede que unos programas necesiten una configuración relativamente simple y otros una más compleja.
