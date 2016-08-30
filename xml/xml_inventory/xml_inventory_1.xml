@@ -1,2 +1,91 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!DOCTYPE inventory SYSTEM "inventory.dtd">
+
+<inventory name="inventoryECCI" version="1.0">
+	<building name="ECCI" state="ok" active="yes" static="yes">
+		<person_in_charge>
+			<name>Gabriela Barrantes</name>
+			<title>Headmaster</title>
+			<id>1-0987-0123</id>
+			<email>gbarrantes@ecci.edu</email>
+		</person_in_charge>
+
+		<rooms>
+			<room name="IF305" state="defective" active="yes" static="yes">
+				<type>classroom</type>
+
+				<person_in_charge>
+					<name>Óscar Porras</name>
+					<title>Janitor</title>
+					<id>2-0981-0973</id>
+				</person_in_charge>
+
+				<note>3 leaks currently on the ceiling.</note>
+
+				<object name="VB78082" state="ok" active="yes" static="no">
+					<type>video_beam</type>
+
+					<person_in_charge>
+						<name>José Alfaro</name>
+						<title>Technician</title>
+						<id>2-0401-0303</id>
+						<email>jalfaro@ecci.edu</email>
+					</person_in_charge>
+				</object>
+
+				<object name="ET130711" state="damaged" active="no" static="no">
+					<type>Desk</type>
+
+					<person_in_charge>
+						<name>Alexis Acuña</name>
+						<title>Janitor</title>
+						<id>7-0811-0557</id>
+						<phone>8888-1285</phone>
+					</person_in_charge>
+
+					<note>Damaged by leaks.</note>
+				</object>
+			</room>
+
+			<room name="IF104" state="ok" active="yes" static="yes">
+				<type>laboratory</type>
+
+				<person_in_charge>
+					<name>José Alfaro</name>
+					<title>Technician</title>
+					<id>2-0401-0303</id>
+					<email>jalfaro@ecci.edu</email>
+				</person_in_charge>
+
+				<object name="BV54403" state="ok" active="yes" static="yes">
+					<type>video_beam</type>
+				</object>
+
+				<object name="HP03028" state="ok" active="yes" static="yes">
+					<type>computer</type>
+
+					<person_in_charge>
+						<name>José Alfaro</name>
+						<title>Technician</title>
+						<id>2-0401-0303</id>
+						<email>jalfaro@ecci.edu</email>
+					</person_in_charge>
+
+					<person_in_charge>
+						<name>Luis Loría</name>
+						<title>TI & Professor</title>
+						<id>1-1111-0741</id>
+						<email>lloria@ecci.edu</email>
+						<phone>2511-1234</phone>
+					</person_in_charge>
+
+					<component name="WD213001" state="damaged" active="yes" static="yes">
+						<type>hard_drive</type>
+
+						<note>Seems to have some damaged sectors.</note>
+					</component>
+				</object>
+			</room>
+		</rooms>
+	</building>
+</inventory>
