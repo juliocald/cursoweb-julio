@@ -1,0 +1,13 @@
+Ejercicio whois_production_website
+
+Averigüe la dirección IP del dominio que aloja su sitio web público en producción, cuándo expira el dominio, el nombre del registrador de dominio, y quiénes son los contactos (las personas físicas) responsables del dominio.
+
+Respuesta:
+
+Dominio: cursoweb.ecci.ucr.ac.cr
+IP: 163.178.104.105 
+Encargados: juan.leon@ucr.ac.cr, steven.cascante@ucr.ac.cr
+
+Expira: 01-01-2035
+
+Registrado por: Universidad de Costa Rica
