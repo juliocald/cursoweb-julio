@@ -1,0 +1,7 @@
+Ejercicio https_domain
+
+Suponga que su empresa tiene un dominio web registrado y un sitio web en producción, digamos en http://suempresa.com. Su empresa quiere abrir un portal privado para los empleados, por lo que se usarán contraseñas. Se quiere que haya una versión segura del sitio en https://suempresa.com. ¿Debe su empresa registrar un nuevo dominio para servir su sitio web en https? Explique por qué sí o por qué no.
+
+Respuesta:
+
+No hay que registrar un dominio nuevo. Solo hay que comprar un certificado SSL, instalarlo en la página web, cambiar cualquier link de la página para que estén con https y redireccionar los 301 para notificarle a los motores de búsqueda que hay una nueva página con más seguridad.
