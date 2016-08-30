@@ -1,0 +1,7 @@
+Ejercicio xml_logs
+
+Muchos programas registran eventos o errores en bitácoras. Por ejemplo, todas las solicitudes HTTP que el servidor web Apache recibe se registran en /var/log/apache2/access.log, y los eventos de arranque o de solicitudes al kernel de Linux se registran en /var/log/messages. Normalmentelas bitácoras son archivos de texto y cada programa utiliza su propio formato. ¿Sugeriría usted que las bitácoras se escriban en XML? Justifique su respuesta.
+
+Respuesta:
+
+No creo que XML sea la mejor manera de registrar los eventos ya que el archivo se va a hacer muy grande muy rápido. No son archivos que funcionan como bases de datos de acceso constante, sino que se leen en la rara ocasión de querer ver algo específico. Eso quiere decir que el uso de etiquetas no proporciona mayor eficiencia solo por su uso.
