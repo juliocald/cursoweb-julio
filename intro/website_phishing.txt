@@ -1,0 +1,16 @@
+Ejercicio website_phishing
+
+Suponga que usted trabaja como el encargado del sitio web para una empresa, la cual realiza comercio electrónico. Usted descubre accidentalmente que existe un sitio web cuya página principal es una copia idéntica a la del sitio web de la empresa. La página falsa tiene un dominio muy parecido al de la empresa, pero intercambiando dos caracteres que son fáciles de digitar incorrectamente cuando se escribe rápido en el teclado. Probablemente la página falsa se creó con el fin de interceptar las contraseñas de los usuarios de la empresa (en inglés phishing). ¿Qué mecanismos dispone usted como informático para defender su empresa? ¿Cuál usaría?
+
+Respuesta:
+
+Solución técnica no hay. Yo como informático informaría de la manera más clara a los usuarios para alertarlos sobre el problema. Además, si es una copia idéntica se podría agregar in script tipo:
+
+<script>
+    if (window.location.hostname !== "yoursite.com") {
+        alert("DANGER! LEAVE THIS SITE IMMEDIATELY. This domain is attempting to deceive you. Visit the true version at yoursite.com");
+        window.location = "http://yoursite.com";
+    }
+</script>
+
+Para evitar que el clon funcione igual a nuestra página. Encriptaria la página para que no sea capaz de cambiar ese script. 
