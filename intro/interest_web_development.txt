@@ -1,0 +1,7 @@
+Ejercicio interest_web_development
+
+Aparte de su sitio web personal, describa un caso o una necesidad web que quiera satisfacer. Puede ser un sitio o una aplicación web para un familiar, una organización, o interés propio. Describa, de forma muy general, la necesidad y la tecnología que utilizaría para satisfacerla.
+
+Respuesta:
+
+Una página web dinámica que funcione como aplicación para adoptar animales ubicados en albergues alrededor del país. Cumple una necesidad para controlar la gran cantidad de animales abandonados en refugios. Le tecnología específica que usaría seria una base de datos simple con la información básica de cada animal y un contacto para su adopción.
