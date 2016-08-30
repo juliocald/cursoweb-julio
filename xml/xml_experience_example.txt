@@ -1,0 +1,7 @@
+Ejercicio xml_experience_example
+
+Describa un ejemplo de una situación en que usted se hubiera beneficiado de haber representado información en XML. Puede ser un proyecto de programación que hizo en algún curso previo, o un proyecto profesional en que haya participado. Sugerencia: piense en archivos de texto sin estructura o bases de datos que haya utilizado previamente.
+
+Respuesta:
+
+Un archivo XML hubiera sido perfecto para un proyecto de programación 2 donde usé un archivo de texto donde guardaba tuplas por linea y tenia una gran cantidad del código del programa dedicado a leer y escribir ese archivo. Era sumamente frágil ya que un solo espacio en blanco mal puesto y el archivo no sirve.
