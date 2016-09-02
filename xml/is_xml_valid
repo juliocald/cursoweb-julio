@@ -1,0 +1,9 @@
+Ejercicio is_xml_valid
+
+El documento no está bien formado.
+
+Lineas 7,8,9: faltan las comillas para los codigos.
+
+Linea 11: se debe cerrar con </text>
+
+linea 13: El string -- no es permitido dentro de un comentario.
