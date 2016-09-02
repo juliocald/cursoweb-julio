@@ -1,0 +1,33 @@
+<!ELEMENT inventory (management?,asset+)>
+<!ATTLIST inventory
+	name ID #REQUIRED
+	version CDATA #IMPLIED>
+
+<!ELEMENT management (employee+)>
+
+<!ELEMENT employee (name, title, email*, phone*)>
+<!ATTLIST employee id ID #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT email (#PCDATA)>
+
+<!ELEMENT phone (#PCDATA)>
+
+<!ELEMENT person_in_charge EMPTY>
+<!ATTLIST person_in_charge refid IDREF #REQUIRED>
+
+<!ELEMENT asset (type, person_in_charge*, note?, asset*)>
+<!ATTLIST asset
+	name ID #REQUIRED
+	state (ok|damaged|defective) "ok"
+	active (yes|no) "yes"
+	static (yes|no) "yes">
+
+<!ELEMENT type (#PCDATA)>
+
+<!ELEMENT note (#PCDATA)>
+
+

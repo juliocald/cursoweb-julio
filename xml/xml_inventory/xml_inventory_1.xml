@@ -1,53 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE inventory SYSTEM "inventory.dtd">
 
 <inventory name="inventoryECCI" version="1.0">
 	<management>
-		<person_in_charge id="109870123">
+		<employee id="emp109870123">
 			<name>Gabriela Barrantes</name>
 			<title>Headmaster</title>
 			<email>gbarrantes@ecci.edu</email>
-		</person_in_charge>
-		<person_in_charge id="209810973">
+		</employee>
+		<employee id="emp209810973">
 			<name>Óscar Porras</name>
 			<title>Janitor</title>
-		</person_in_charge>
-		<person_in_charge id="204010303">
+		</employee>
+		<employee id="emp204010303">
 			<name>José Alfaro</name>
 			<title>Technician</title>
 			<email>jalfaro@ecci.edu</email>
-		</person_in_charge>
-		<person_in_charge id="708110557">
+		</employee>
+		<employee id="emp708110557">
 			<name>Alexis Acuña</name>
 			<title>Janitor</title>
 			<phone>8888-1285</phone>
-		</person_in_charge>
-		<person_in_charge id="111110741">
+		</employee>
+		<employee id="emp111110741">
 			<name>Luis Loría</name>
 			<title>TI and Professor</title>
 			<email>lloria@ecci.edu</email>
 			<phone>2511-1234</phone>
-		</person_in_charge>
+		</employee>
 	</management>
 
 	<asset name="ECCI" state="ok" active="yes" static="yes">
 		<type>building</type>
-		<person_in_charge refid="109870123"/>
+		<person_in_charge refid="emp109870123"/>
 		<asset name="IF305" state="defective" active="yes" static="yes">
 			<type>classroom</type>
-			<person_in_charge refid="209810973"/>
+			<person_in_charge refid="emp209810973"/>
 
 			<note>3 leaks currently on the ceiling.</note>
 
 			<asset name="VB78082" state="ok" active="yes" static="no">
 				<type>video_beam</type>
-				<person_in_charge refid="204010303"/>
+				<person_in_charge refid="emp204010303"/>
 
 			</asset>
 
 			<asset name="ET130711" state="damaged" active="no" static="no">
 				<type>Desk</type>
-				<person_in_charge refid="708110557"/>
+				<person_in_charge refid="emp708110557"/>
 
 				<note>Damaged by leaks.</note>
 			</asset>
@@ -55,17 +55,17 @@
 
 		<asset name="IF104" state="ok" active="yes" static="yes">
 			<type>laboratory</type>
-			<person_in_charge refid="204010303"/>
+			<person_in_charge refid="emp204010303"/>
 
 			<asset name="BV54403" state="ok" active="yes" static="yes">
 				<type>video_beam</type>
-				<person_in_charge refid="209810973"/>
+				<person_in_charge refid="emp209810973"/>
 			</asset>
 
 			<asset name="HP03028" state="ok" active="yes" static="yes">
 				<type>computer</type>
-				<person_in_charge refid="204010303"/>
-				<person_in_charge refid="111110741"/>
+				<person_in_charge refid="emp204010303"/>
+				<person_in_charge refid="emp111110741"/>
 
 				<asset name="WD213001" state="damaged" active="yes" static="yes">
 					<type>hard_drive</type>
