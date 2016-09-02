@@ -2,90 +2,77 @@
 <!DOCTYPE inventory SYSTEM "inventory.dtd">
 
 <inventory name="inventoryECCI" version="1.0">
-	<building name="ECCI" state="ok" active="yes" static="yes">
-		<person_in_charge>
+	<management>
+		<person_in_charge id="109870123">
 			<name>Gabriela Barrantes</name>
 			<title>Headmaster</title>
-			<id>1-0987-0123</id>
 			<email>gbarrantes@ecci.edu</email>
 		</person_in_charge>
+		<person_in_charge id="209810973">
+			<name>Óscar Porras</name>
+			<title>Janitor</title>
+		</person_in_charge>
+		<person_in_charge id="204010303">
+			<name>José Alfaro</name>
+			<title>Technician</title>
+			<email>jalfaro@ecci.edu</email>
+		</person_in_charge>
+		<person_in_charge id="708110557">
+			<name>Alexis Acuña</name>
+			<title>Janitor</title>
+			<phone>8888-1285</phone>
+		</person_in_charge>
+		<person_in_charge id="111110741">
+			<name>Luis Loría</name>
+			<title>TI and Professor</title>
+			<email>lloria@ecci.edu</email>
+			<phone>2511-1234</phone>
+		</person_in_charge>
+	</management>
 
-		<rooms>
-			<room name="IF305" state="defective" active="yes" static="yes">
-				<type>classroom</type>
+	<asset name="ECCI" state="ok" active="yes" static="yes">
+		<type>building</type>
+		<person_in_charge refid="109870123"/>
+		<asset name="IF305" state="defective" active="yes" static="yes">
+			<type>classroom</type>
+			<person_in_charge refid="209810973"/>
 
-				<person_in_charge>
-					<name>Óscar Porras</name>
-					<title>Janitor</title>
-					<id>2-0981-0973</id>
-				</person_in_charge>
+			<note>3 leaks currently on the ceiling.</note>
 
-				<note>3 leaks currently on the ceiling.</note>
+			<asset name="VB78082" state="ok" active="yes" static="no">
+				<type>video_beam</type>
+				<person_in_charge refid="204010303"/>
 
-				<object name="VB78082" state="ok" active="yes" static="no">
-					<type>video_beam</type>
+			</asset>
 
-					<person_in_charge>
-						<name>José Alfaro</name>
-						<title>Technician</title>
-						<id>2-0401-0303</id>
-						<email>jalfaro@ecci.edu</email>
-					</person_in_charge>
-				</object>
+			<asset name="ET130711" state="damaged" active="no" static="no">
+				<type>Desk</type>
+				<person_in_charge refid="708110557"/>
 
-				<object name="ET130711" state="damaged" active="no" static="no">
-					<type>Desk</type>
+				<note>Damaged by leaks.</note>
+			</asset>
+		</asset>
 
-					<person_in_charge>
-						<name>Alexis Acuña</name>
-						<title>Janitor</title>
-						<id>7-0811-0557</id>
-						<phone>8888-1285</phone>
-					</person_in_charge>
+		<asset name="IF104" state="ok" active="yes" static="yes">
+			<type>laboratory</type>
+			<person_in_charge refid="204010303"/>
 
-					<note>Damaged by leaks.</note>
-				</object>
-			</room>
+			<asset name="BV54403" state="ok" active="yes" static="yes">
+				<type>video_beam</type>
+				<person_in_charge refid="209810973"/>
+			</asset>
 
-			<room name="IF104" state="ok" active="yes" static="yes">
-				<type>laboratory</type>
+			<asset name="HP03028" state="ok" active="yes" static="yes">
+				<type>computer</type>
+				<person_in_charge refid="204010303"/>
+				<person_in_charge refid="111110741"/>
 
-				<person_in_charge>
-					<name>José Alfaro</name>
-					<title>Technician</title>
-					<id>2-0401-0303</id>
-					<email>jalfaro@ecci.edu</email>
-				</person_in_charge>
+				<asset name="WD213001" state="damaged" active="yes" static="yes">
+					<type>hard_drive</type>
 
-				<object name="BV54403" state="ok" active="yes" static="yes">
-					<type>video_beam</type>
-				</object>
-
-				<object name="HP03028" state="ok" active="yes" static="yes">
-					<type>computer</type>
-
-					<person_in_charge>
-						<name>José Alfaro</name>
-						<title>Technician</title>
-						<id>2-0401-0303</id>
-						<email>jalfaro@ecci.edu</email>
-					</person_in_charge>
-
-					<person_in_charge>
-						<name>Luis Loría</name>
-						<title>TI & Professor</title>
-						<id>1-1111-0741</id>
-						<email>lloria@ecci.edu</email>
-						<phone>2511-1234</phone>
-					</person_in_charge>
-
-					<component name="WD213001" state="damaged" active="yes" static="yes">
-						<type>hard_drive</type>
-
-						<note>Seems to have some damaged sectors.</note>
-					</component>
-				</object>
-			</room>
-		</rooms>
-	</building>
+					<note>Seems to have some damaged sectors.</note>
+				</asset>
+			</asset>
+		</asset>
+	</asset>
 </inventory>
