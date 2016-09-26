@@ -47,4 +47,6 @@
 <!-- elemento nota -->
 <!ELEMENT note (#PCDATA)>
 
+<!-- ejercicio xml_inventory_7 con enumeracion de valores y valores por defecto en algunos casos -->
+
 
