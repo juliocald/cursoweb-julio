@@ -45,7 +45,7 @@
 		</asset>
 	</asset>
 
-	<asset name="FincaRioAzul" state="damaged" active="yes" static="yes">
+	<asset name="RioAzul" state="damaged" active="yes" static="yes">
 		<type>farm</type>
 		<person_in_charge refid="emp402310861"/>
 
