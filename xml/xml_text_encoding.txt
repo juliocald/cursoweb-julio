@@ -1,0 +1,9 @@
+Ejercicio xml_text_encoding
+
+Investigue la diferencia entre un conjunto de caracteres (character set) y la codificación del texto (text enconding). ¿Cómo esto afecta a los documentos XML?
+
+Respuesta:
+
+Un conjunto de caracteres son los signos que podemos usar para representar un mensaje en un archivo XML y es diferente de la codificación tel texto porque esta ultima es la forma en que dichos caracteres se representan en la memoria.
+
+Estos dos afectan los archivos XML ya que la mayoría de los servidores web no están programados para enviar conjuntos de caracteres para un archivo .xml, entonces lo único que tiene un parser a su disposición para leer el mensaje es la codificación que se usó.
