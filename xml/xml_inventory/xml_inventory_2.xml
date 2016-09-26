@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE inventory SYSTEM "inventory.dtd">
+
+<inventory name="farms" version="1.0">
+	<management>
+		<employee id="emp402310861">
+			<name>Ramiro Jimenez</name>
+			<title>manager</title>
+			<email>rjv@cazadora.co.cr</email>
+		</employee>
+		<employee id="emp113090711">
+			<name>Mauricio murillo</name>
+			<title>driver</title>
+			<phone>8818-8118</phone>
+		</employee>
+		<employee id="emp106710262">
+			<name>Dionisio Vega</name>
+			<title>mechanic</title>
+			<email>dvega@uncrash.org</email>
+		</employee>
+		<employee id="emp310171008">
+			<name>Amelia Salas</name>
+			<title>driver</title>
+			<phone>8471-2415</phone>
+		</employee>
+	</management>
+
+	<asset name="FincaLagunilla" state="ok" active="yes" static="yes">
+		<type>farm</type>
+		<person_in_charge refid="emp402310861"/>
+		
+		<asset name="SJ1791" state="defective" active="no" static="no">
+			<type>bus</type>
+			<person_in_charge refid="emp113090711"/>
+			<note>Crashed with a train.</note>
+
+			<asset name="MT25591" state="ok" active="no" static="yes">
+				<type>motor</type>
+			</asset>
+
+			<asset name="CT20021" state="damaged" active="no" static="yes">
+				<type>car_housing</type>
+				<note>2.5m of damaged housing + back door.</note>
+			</asset>
+		</asset>
+	</asset>
+
+	<asset name="FincaRioAzul" state="damaged" active="yes" static="yes">
+		<type>farm</type>
+		<person_in_charge refid="emp402310861"/>
+
+		<asset name="SJ8990" state="damaged" active="yes" static="yes">
+			<type>bus</type>
+			<person_in_charge refid="emp106710262"/>
+			<person_in_charge refid="emp310171008"/>
+
+			<asset name="ABN013" state="ok" active="yes" static="no">
+				<type>fan</type>
+			</asset>
+
+			<asset name="GHM8310" state="damaged" active="no" static="no">
+				<type>hydraulic lever</type>
+				<note>Still in warranty.</note>
+			</asset>
+		</asset>
+	</asset>
+</inventory>
