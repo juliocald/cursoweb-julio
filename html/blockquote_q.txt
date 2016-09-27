@@ -1,0 +1,37 @@
+Ejercicio blockquote_q
+
+Los elementos blockquote y q sirven para citar ideas de otro autor. Investigue en la especificación:
+
+¿Cuál es la diferencia entre blockquote y q?
+¿Debe el autor proveer comillas o estos elementos las agregan automáticamente?
+¿Estos dos elementos permiten agregar varios párrafos p en su contenido?
+¿En qué afecta indicar el idioma de la cita?
+¿Cuáles de estos elementos se pueden anidar?
+¿Qué abuso han históricamente cometido los autores de páginas web con el elemento blockquote?
+
+Respuestas:
+
+¿Cuál es la diferencia entre blockquote y q?
+
+R/: q es cuando se cita solo una frase dentro del mismo texto que escribimos y blockquote ayudar a citar bloques más grandes de texto
+
+¿Debe el autor proveer comillas o estos elementos las agregan automáticamente?
+
+R/: Cuando se usa q, no. Cuando se usa blockquote puede incluirlas o no.
+
+¿Estos dos elementos permiten agregar varios párrafos p en su contenido?
+
+R/: Solo blockquote.
+
+¿En qué afecta indicar el idioma de la cita?
+
+R/: Puede que el texto esté en un idioma que requiere otra dirección diferente a la por defecto, por lo que es buna práctica especificar siempre el idioma.
+
+¿Cuáles de estos elementos se pueden anidar?
+
+R/: El q se puede anidar en un blockquote pero no al revés.
+
+¿Qué abuso han históricamente cometido los autores de páginas web con el elemento blockquote?
+
+R/: A veces se usa blockquote como ayuda para indentar un texto, cuando realmente es para citar y separar un parrafo del resto del texto.
+
