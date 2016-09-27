@@ -1,0 +1,11 @@
+Ejercicio validity_fix
+
+Localice dos páginas web de su agrado y sométalas al validador del W3C. Al menos una de ella debe no conformarse al estándar que declara. Si usted tuviera que corregirla, describa rápidamente qué cambios tendría que hacerle.
+
+# 1: www.daringfireball.net
+# 2: www.loopinsight.com
+
+
+Para la primera solo muestra un error; que el atributo color no se puede usar en el elemento link. Yo pondría el color del link en la hoja de estilos mejor.
+
+Para la segunda muestra muchos más errores, incluyendo errores en las etiquetas, elementos obsoletos y atributos innecesarios para varios elementos. Yo empezaría por modernizar la página y dejar de utilizar elementos obsoletos.
