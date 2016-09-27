@@ -1,0 +1,8 @@
+Ejercicio ltr_rtl
+
+Obtenga una copia del archivo que hizo en el ejercicio exercise 3.1. Cambie la dirección del texto de derecha a izquierda del elemento body u otros elementos. Pruebe en un navegador su efecto. ¿Es lo mismo que usar el estilo de justificación derecha del texto?
+
+
+Respuesta:
+
+Aún cambiado esos atributos, no hubo forma de que me hiciera algún cambio en el HTML. Lo probé tanto en Safari como en Chrome asi que no es lo mismo que usar el estilo de justificación derecha del texto.
