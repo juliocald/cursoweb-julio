@@ -1,0 +1,14 @@
+Ejercicio html_body_text
+
+Descargue un DTD de HTML 4.01 ó XHTML 1.1 y averigüe si ¿es permitido escribir texto puro directamente en el contenido del elemento body? Justifique su respuesta.
+
+Respuesta:
+
+No se puede. Lo comprobé metiendo texto en el archivo XHTML anterior y validandolo. El validador arrojó lo siguiente, o sea, no se peude escribir texto directamente sin que esté dentro de otra etiqueta como por ejemplo <p>.
+
+
+
+
+You have used character data somewhere it is not permitted to appear. Mistakes that can cause this error include:
+
+putting text directly in the body of the document without wrapping it in a container element (such as a <p>aragraph</p>), or
