@@ -1,0 +1,41 @@
+Ejercicio dtd_statistics
+
+Haga estadísticas. Someta al validador del W3C al menos diez páginas web que frecuenta (por ejemplo, las que tiene registradas en sus favoritos). ¿Cuántas de ellas son válidas? ¿Qué tipos de documentos (DTD) son los menos y más usados? ¿Reflejan sus resultados estadísticas generadas por otros autores (por ejemplo: 70% HTML, 30% XHTML)?
+
+Respuesta:
+
+Páginas utilizadas:
+
+www.theverge.com
+	No válida.
+	HTML.
+www.macrumors.com
+	No válida.
+	HTML.
+www.arstechnica.com
+	No válida.
+	HTML.
+www.medium.com
+	No válida.
+	HTML.
+www.engadget.com
+	No válida.
+	HTML.
+www.daringfireball.net
+	No válida.
+	HTML.
+www.nacion.com
+	No válida.
+	HTML.
+www.netflix.com
+	No válida.
+	HTML.
+www.youtube.com
+	No válida.
+	HTML.
+www.polygon.com
+	No válida.
+	HTML.
+
+Resultados: todas son HTML. Ninguna es válida.
+
