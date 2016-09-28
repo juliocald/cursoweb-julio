@@ -1,0 +1,37 @@
+h1
+{
+	text-align: center;
+}
+
+#site_tagline { 
+    text-align: center;
+    margin: 1cm;
+}
+
+#site_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+li {
+	display:inline;
+}
+
+li a {
+    display: inline-block;
+    color: black;
+    padding: 0px 50px;
+    text-decoration: none;
+}
+
+body
+{
+   font-family: "Lucida Grande", sans-serif;
+   margin: 1cm;
+}
+
+p { color: black; }
