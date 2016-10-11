@@ -34,4 +34,21 @@ body
    margin: 1cm;
 }
 
-p { color: black; }
+p { 
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px;
+}
+
+th {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
