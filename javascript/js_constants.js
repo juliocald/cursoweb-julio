@@ -71,6 +71,24 @@
       document.write("<td>" + isFinite(Number.NEGATIVE_INFINITY) + "</td>");
       document.write("</tr>");
 
+      document.write("<tr>");
+      document.write("<th>3 * 2</th>");
+      document.write("<td>"+ 3 * 2 + "</td>");
+      document.write("<td>" + 3 * 2 + "</td>");
+      document.write("<td>" + 3 * 2 + "</td>");
+      document.write("<td>" + isNaN(3 * 2) + "</td>");
+      document.write("<td>" + isFinite(3 * 2) + "</td>");
+      document.write("</tr>");
+
+      document.write("<tr>");
+      document.write("<th>Infinity / Infinity</th>");
+      document.write("<td>"+ Infinity / Infinity + "</td>");
+      document.write("<td>" + ((Infinity / Infinity) -1) + "</td>");
+      document.write("<td>" + ((Infinity / Infinity) +1) + "</td>");
+      document.write("<td>" + isNaN(Infinity / Infinity) + "</td>");
+      document.write("<td>" + isFinite(Infinity / Infinity) + "</td>");
+      document.write("</tr>");
+
       document.write("</table>");
 
       
