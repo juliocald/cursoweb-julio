@@ -52,3 +52,15 @@ table {
     border-collapse: collapse;
     margin: 0 auto;
 }
+
+span {
+    opacity: 0.3;
+    font-weight: bold;
+    font-size: 3.5em;
+    position: absolute;
+    z-index: -1;
+}
+
+p.hometown {
+    color: black;
+}
