@@ -20,11 +20,16 @@
 
    <script type="text/javascript">
       document.write("<table>");
-      for(var i = 1; i < 21; i++) {
+      for(var i = 0; i < 21; i++) {
          document.write("<tr>");
-         for(var j = 1; j < 21; j++) {
-            if(j == 1 || i == 1) {
-               document.write("<th>" + i*j + "</th>");
+         for(var j = 0; j < 21; j++) {
+            if(j == 0 || i == 0) {
+               if(j == 0){
+                  document.write("<th>" + i + "</th>");
+               }
+               else {
+                  document.write("<th>" + j + "</th>");
+               }
             }
             else {
                document.write("<td>" + i*j + "</td>");
