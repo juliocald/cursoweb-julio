@@ -28,6 +28,11 @@ li a {
     text-decoration: none;
 }
 
+li.verticalList {
+    display:list-item;
+}
+
+
 body
 {
    font-family: "Lucida Grande", sans-serif;
