@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta name="author" content="Julio Calderón" />
+	<meta name="copyright" content="&copy; 2016 ECCI-UCR" />
+	<meta name="keywords" content="desarrollo web, curso, evaluación" />
+	<link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+	<link rel="icon" href="images/favicon.ico"/>
+	<title>boolean_expressions</title>
+</head>
+
+<body>
+	<header id="site_header">
+		<h1 id="site_title">boolean_expressions</h1>
+	</header>
+	<hr></hr>
+
+	<table xmlns="http://www.w3.org/1999/xhtml" class="listing">
+		<thead>
+			<tr><th></th><th>Expresión</th><th>Predicción</th><th>Resultado</th></tr>
+		</thead>
+		<tbody>
+		<tr><th>1</th><td>var a = 0/0 == NaN;</td><td>true</td><td>false</td></tr>
+			<tr><th>2</th><td>var b = a == false;</td><td>false</td><td>true</td></tr>
+			<tr><th>3</th><td>var c = Number(a);</td><td>false</td><td>0</td></tr>
+			<tr><th>4</th><td>var d = Number(b);</td><td>true</td><td>1</td></tr>
+			<tr><th>5</th><td>var e = String(a);</td><td>true</td><td>"false"</td></tr>
+			<tr><th>6</th><td>var f = String(b);</td><td>true</td><td>"true"</td></tr>
+			<tr><th>7</th><td>var g = Boolean('true');</td><td>true</td><td>true</td></tr>
+			<tr><th>8</th><td>var h = Boolean(' True ');</td><td>true</td><td>true</td></tr>
+			<tr><th>9</th><td>var i = Boolean('false');</td><td>true</td><td>true</td></tr>
+			<tr><th>10</th><td>var j = Boolean('0');</td><td>true</td><td>true</td></tr>
+			<tr><th>11</th><td>var k = Boolean(0);</td><td>false</td><td>false</td></tr>
+			<tr><th>12</th><td>var l = Boolean(-1);</td><td>false</td><td>true</td></tr>
+			<tr><th>13</th><td>var m = Boolean(null);</td><td>false</td><td>false</td></tr>
+			<tr><th>14</th><td>var n = Boolean('');</td><td>false</td><td>false</td></tr>
+			<tr><th>15</th><td>var o = Boolean(' ');</td><td>true</td><td>true</td></tr>
+		</tbody>
+	</table>
+<h2 class="centerh2heading">Respuestas correctas: 11 de 15.</h2>
+
+	<footer id="page_footer">
+		<p><small>© 2016. Julio Calderón. Todos los derechos reservados.</small></p>
+	</footer>
+</body>
+</html>

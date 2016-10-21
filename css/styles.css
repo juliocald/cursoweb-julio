@@ -64,3 +64,7 @@ span {
 p.hometown {
     color: black;
 }
+
+h2.centerh2heading {
+    text-align: center;
+}
