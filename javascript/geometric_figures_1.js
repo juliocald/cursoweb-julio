@@ -50,18 +50,18 @@ function imprimirRectangulo(x) {
 	document.write("<td>" + area + "</td>");
 }
 
-function imprimirTriangulo(x) {
-	var perimetro = Math.sqrt(Math.pow(triangle.geometry.properties.vertexA.x - triangle.geometry.properties.vertexB.x,2) + Math.pow(triangle.geometry.properties.vertexA.y - triangle.geometry.properties.vertexB.y,2)) + Math.sqrt(Math.pow(triangle.geometry.properties.vertexA.x - triangle.geometry.properties.vertexC.x,2) + Math.pow(triangle.geometry.properties.vertexA.y - triangle.geometry.properties.vertexC.y,2)) + Math.sqrt(Math.pow(triangle.geometry.properties.vertexB.x - triangle.geometry.properties.vertexC.x,2) + Math.pow(triangle.geometry.properties.vertexB.y - triangle.geometry.properties.vertexC.y,2));
-	var area = Math.abs( (triangle.geometry.properties.vertexA.x * (triangle.geometry.properties.vertexB.y - triangle.geometry.properties.vertexC.y) + triangle.geometry.properties.vertexB.x * (triangle.geometry.properties.vertexC.y - triangle.geometry.properties.vertexA.y) + triangle.geometry.properties.vertexC.x * (triangle.geometry.properties.vertexA.y - triangle.geometry.properties.vertexB.y)) / 2);
+function imprimirTriangulo(triangleX, x) {
+	var perimetro = Math.sqrt(Math.pow(triangleX.geometry.properties.vertexA.x - triangleX.geometry.properties.vertexB.x,2) + Math.pow(triangleX.geometry.properties.vertexA.y - triangleX.geometry.properties.vertexB.y,2)) + Math.sqrt(Math.pow(triangleX.geometry.properties.vertexA.x - triangleX.geometry.properties.vertexC.x,2) + Math.pow(triangleX.geometry.properties.vertexA.y - triangleX.geometry.properties.vertexC.y,2)) + Math.sqrt(Math.pow(triangleX.geometry.properties.vertexB.x - triangleX.geometry.properties.vertexC.x,2) + Math.pow(triangleX.geometry.properties.vertexB.y - triangleX.geometry.properties.vertexC.y,2));
+	var area = Math.abs( (triangleX.geometry.properties.vertexA.x * (triangleX.geometry.properties.vertexB.y - triangleX.geometry.properties.vertexC.y) + triangleX.geometry.properties.vertexB.x * (triangleX.geometry.properties.vertexC.y - triangleX.geometry.properties.vertexA.y) + triangleX.geometry.properties.vertexC.x * (triangleX.geometry.properties.vertexA.y - triangleX.geometry.properties.vertexB.y)) / 2);
 	document.write("<th>" + x + "</th>");
-	document.write("<td>Rectángulo</td>");
-	document.write("<td>a(" + triangle.geometry.properties.vertexA.x + "," + triangle.geometry.properties.vertexA.y + "), b(" + triangle.geometry.properties.vertexB.x + "," + triangle.geometry.properties.vertexB.y + "), c(" + triangle.geometry.properties.vertexC.x + "," + triangle.geometry.properties.vertexC.y + ")</td>");
+	document.write("<td>Triángulo</td>");
+	document.write("<td>a(" + triangleX.geometry.properties.vertexA.x + "," + triangleX.geometry.properties.vertexA.y + "), b(" + triangleX.geometry.properties.vertexB.x + "," + triangleX.geometry.properties.vertexB.y + "), c(" + triangleX.geometry.properties.vertexC.x + "," + triangleX.geometry.properties.vertexC.y + ")</td>");
 	document.write("<td>" + perimetro + "</td>");
 	document.write("<td>" + area + "</td>");
 }
 
 document.write("<table>");
-for(var i = 0; i < 4; i++) {
+for(var i = 0; i <= 4; i++) {
 	document.write("<tr>");
 	if (i == 0) {
 		document.write("<th>#</th><th>Figura</th><th>Posición/Dimensiones</th><th>Perímetro</th><th>Área</th>");
@@ -75,7 +75,23 @@ for(var i = 0; i < 4; i++) {
 			imprimirRectangulo(i);
 			break;
 			case 3:
-			imprimirTriangulo(i);
+			imprimirTriangulo(triangle, i);
+			break;
+			case 4:
+			var triangleY =
+			{
+				geometry:
+				{
+					coordinates: { x: 32, y: 17 },
+					properties: 
+					{
+						vertexA: { x: 5, y: 2 },
+						vertexB: { x: 10, y: 7 },
+						vertexC: { x: 15, y: 5 }
+					}
+				}
+			};
+			imprimirTriangulo(triangleY, i+1);
 			break;
 		}
 	}
