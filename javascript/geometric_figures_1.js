@@ -1,22 +1,44 @@
-var circle = 
-{
-	id: 1,
-	geometry:
-	{
-		coordinates: { x: 10, y: 5 },
-		properties: { radius: 10 }
-	}
+function crearCirculo() {
+	var newCircle = {
+		id: 1,
+		geometry:
+		{
+			coordinates: { x: (Math.floor((Math.random() * 20) + 1)), y: (Math.floor((Math.random() * 20) + 1)) },
+			properties: { radius: (Math.floor((Math.random() * 10) + 1)) }
+		}
+	};
+	return newCircle;
 };
 
-var rectangle =
-{
-	id: 2,
-	geometry:
-	{
-		coordinates: { x: 30, y: 45 },
-		properties: { width: 23, height: 12 }
-	}
+function crearRectangulo() {
+	var newRectangle = {
+		id: 2,
+		geometry:
+		{
+			coordinates: { x: (Math.floor((Math.random() * 20) + 1)), y: (Math.floor((Math.random() * 20) + 1)) },
+			properties: { width: (Math.floor((Math.random() * 10) + 1)), height: (Math.floor((Math.random() * 10) + 1)) }
+		}
+	};
+	return newRectangle;
 };
+
+function crearTriangulo() {
+	var newTriangle = {
+		id: 3,
+		geometry:
+		{
+			coordinates: { x: (Math.floor((Math.random() * 32) + 1)), y: (Math.floor((Math.random() * 17) + 1)) },
+			properties: 
+			{
+				vertexA: { x: (Math.floor((Math.random() * 5) + 1)), y: (Math.floor((Math.random() * 5) + 1)) },
+				vertexB: { x: (Math.floor((Math.random() * 5) + 1)), y: (Math.floor((Math.random() * 5) + 1)) },
+				vertexC: { x: (Math.floor((Math.random() * 5) + 1)), y: (Math.floor((Math.random() * 5) + 1)) }
+			}
+		}
+	};
+	return newTriangle; 
+};
+
 
 var triangle =
 {
@@ -33,22 +55,22 @@ var triangle =
 	}
 };
 
-function imprimirCirculo(x) {
-	var perimetro = 2 * Math.PI * circle.geometry.properties.radius;
-	var area = Math.PI * (circle.geometry.properties.radius*circle.geometry.properties.radius);
+function imprimirCirculo(tempCircle, x) {
+	var perimetro = 2 * Math.PI * tempCircle.geometry.properties.radius;
+	var area = Math.PI * (tempCircle.geometry.properties.radius*tempCircle.geometry.properties.radius);
 	document.write("<th>" + x + "</th>");
 	document.write("<td>Círculo</td>");
-	document.write("<td>centro(" + circle.geometry.coordinates.x + "," + circle.geometry.coordinates.y + ") radio(" + circle.geometry.properties.radius + ")</td>");
+	document.write("<td>centro(" + tempCircle.geometry.coordinates.x + "," + tempCircle.geometry.coordinates.y + ") radio(" + tempCircle.geometry.properties.radius + ")</td>");
 	document.write("<td>" + perimetro + "</td>");
 	document.write("<td>" + area + "</td>");
 }
 
-function imprimirRectangulo(x) {
-	var perimetro = 2 * rectangle.geometry.properties.width + 2 * rectangle.geometry.properties.height;
-	var area = rectangle.geometry.properties.width * rectangle.geometry.properties.height;
+function imprimirRectangulo(tempRectangle, x) {
+	var perimetro = 2 * tempRectangle.geometry.properties.width + 2 * tempRectangle.geometry.properties.height;
+	var area = tempRectangle.geometry.properties.width * tempRectangle.geometry.properties.height;
 	document.write("<th>" + x + "</th>");
 	document.write("<td>Rectángulo</td>");
-	document.write("<td>esquina superior izquierda(" + rectangle.geometry.coordinates.x + "," + rectangle.geometry.coordinates.y + ")</td>");
+	document.write("<td>esquina superior izquierda(" + tempRectangle.geometry.coordinates.x + "," + tempRectangle.geometry.coordinates.y + ")</td>");
 	document.write("<td>" + perimetro + "</td>");
 	document.write("<td>" + area + "</td>");
 }
@@ -64,29 +86,38 @@ function imprimirTriangulo(triangleX, x) {
 }
 
 var a = new Array();
-a.push(circle);
-a.push(triangle);
-a.push(rectangle);
+
+for (var i = 0; i < 20; i++) {
+	var random = Math.floor((Math.random() * 3) + 1);
+
+	switch (random) {
+		case 1:
+		a.push(crearCirculo());
+		break;
+		case 2:
+		a.push(crearRectangulo());
+		break;
+		case 3:
+		a.push(crearTriangulo());
+		break;
+	}
+};
 
 document.write("<table>");
-for(var i = 0; i <= a.length+1; i++) {
+document.write("<tr><th>#</th><th>Figura</th><th>Posición/Dimensiones</th><th>Perímetro</th><th>Área</th></tr>");
+for(var i = 0; i < a.length; i++) {
 	document.write("<tr>");
-	if (i == 0) {
-		document.write("<th>#</th><th>Figura</th><th>Posición/Dimensiones</th><th>Perímetro</th><th>Área</th>");
-	} 
-	else {
-		switch (a[i-1].id) {
-			case 1: 
-			imprimirCirculo(i);
-			break;
-			case 2: 
-			imprimirRectangulo(i);
-			break;
-			case 3: 
-			imprimirTriangulo(triangle, i);
-			break;
-		}
-	}
+	switch (a[i].id) {
+		case 1: 
+		imprimirCirculo(a[i], i);
+		break;
+		case 2:
+		imprimirRectangulo(a[i], i);
+		break;
+		case 3:
+		imprimirTriangulo(a[i], i);
+		break;
+	};
 	document.write("</tr>");
 }
 document.write("</table>");
