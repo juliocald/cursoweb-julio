@@ -1,5 +1,6 @@
 var circle = 
 {
+	id: 1,
 	geometry:
 	{
 		coordinates: { x: 10, y: 5 },
@@ -9,6 +10,7 @@ var circle =
 
 var rectangle =
 {
+	id: 2,
 	geometry:
 	{
 		coordinates: { x: 30, y: 45 },
@@ -18,6 +20,7 @@ var rectangle =
 
 var triangle =
 {
+	id: 3,
 	geometry:
 	{
 		coordinates: { x: 32, y: 17 },
@@ -60,38 +63,27 @@ function imprimirTriangulo(triangleX, x) {
 	document.write("<td>" + area + "</td>");
 }
 
+var a = new Array();
+a.push(circle);
+a.push(triangle);
+a.push(rectangle);
+
 document.write("<table>");
-for(var i = 0; i <= 4; i++) {
+for(var i = 0; i <= a.length+1; i++) {
 	document.write("<tr>");
 	if (i == 0) {
 		document.write("<th>#</th><th>Figura</th><th>Posición/Dimensiones</th><th>Perímetro</th><th>Área</th>");
 	} 
 	else {
-		switch (i) {
-			case 1:
+		switch (a[i-1].id) {
+			case 1: 
 			imprimirCirculo(i);
 			break;
-			case 2:
+			case 2: 
 			imprimirRectangulo(i);
 			break;
-			case 3:
+			case 3: 
 			imprimirTriangulo(triangle, i);
-			break;
-			case 4:
-			var triangleY =
-			{
-				geometry:
-				{
-					coordinates: { x: 32, y: 17 },
-					properties: 
-					{
-						vertexA: { x: 5, y: 2 },
-						vertexB: { x: 10, y: 7 },
-						vertexC: { x: 15, y: 5 }
-					}
-				}
-			};
-			imprimirTriangulo(triangleY, i+1);
 			break;
 		}
 	}
