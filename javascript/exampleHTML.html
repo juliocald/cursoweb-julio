@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta name="author" content="Julio Calderón" />
+	<meta name="copyright" content="&copy; 2016 ECCI-UCR" />
+	<meta name="keywords" content="desarrollo web, curso, evaluación" />
+	<link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+	<link rel="icon" href="images/favicon.ico"/>
+	<title>average_vararg</title>
+</head>
+
+<body>
+	<header id="site_header">
+		<h1 id="site_title">average_vararg</h1>
+	</header>
+	<hr></hr>
+
+	<script src="average_vararg.js"></script>
+
+	<p id="result"></p>
+
+	<form>
+		<input onclick="calcAverage()" type="radio" name="gender" value="female"> calcAverage()<br>
+		<input onclick="calcAverage(1)" type="radio" name="gender" value="female"> calcAverage(1)<br>
+		<input onclick="calcAverage(1,2)" type="radio" name="gender" value="female"> calcAverage(1,2)<br>
+		<input onclick="calcAverage(1,2,3)" type="radio" name="gender" value="female"> calcAverage(1,2,3)<br>
+		<input onclick="calcAverage(1,2,3,4)" type="radio" name="gender" value="female"> calcAverage(1,2,3,4)<br>
+	</form>
+
+	<footer id="page_footer">
+		<p><small>© 2016. Julio Calderón. Todos los derechos reservados.</small></p>
+	</footer>
+</body>
+</html>
