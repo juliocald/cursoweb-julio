@@ -21,7 +21,7 @@
 
       function animateText(){
          textLeft += 5;
-         if ( textLeft > 320 ) textLeft = -320;
+         if ( textLeft > window.innerWidth ) textLeft = -window.innerWidth;
          var element = document.getElementById('text');
          element.style.left = Math.abs(textLeft) + 'px';
       };
