@@ -1,12 +1,37 @@
+function Style(){
+	this.result = "";
+}
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+Style.prototype.print = function(){
+	this.result += "<style>";
+
+    this.result += "body {background-color: " + getRandomColor() + ";} "
+
+    this.result += "h1 {color: " + getRandomColor() + ";} "
+
+    this.result += "p {color: " +getRandomColor() + ";}</style>";
+
+    document.write(this.result);
+}
+
 function Header(){
-	// this.style = new Style();
-	this.result = "<link rel=\x22stylesheet\x22 type=\x22text/css\x22 href=\x22../css/styles.css\x22/>";
+	this.style = new Style();
+	// this.result = "<link rel=\x22stylesheet\x22 type=\x22text/css\x22 href=\x22../css/styles.css\x22/>";
 }
 
 Header.prototype.print = function(){
-	// this.style.print();
-	alert(this.result);
-	document.write(this.result);
+	this.style.print();
+	// alert(this.result);
+	// document.write(this.result);
 }
 
 function List(){
