@@ -9,7 +9,9 @@
 </head>
 
 <body>
-   <div id="text">Julio Calderón</div>
+   <div id="text">
+   <img src="../images/screensaver.png" alt="">
+   </div>
    <script>
       'use strict';
       var intervalId;
@@ -18,12 +20,25 @@
       };
 
       var textLeft = 0;
+      var textUp= 0;
+
+      var textRight = 0;
 
       function animateText(){
+
          textLeft += 5;
-         if ( textLeft > window.innerWidth ) textLeft = -window.innerWidth;
+         if ( textLeft > (window.innerWidth - 414) ) textLeft = -window.innerWidth + 414;
          var element = document.getElementById('text');
          element.style.left = Math.abs(textLeft) + 'px';
+
+         // textRight += 5;
+         // if ( textRight > window.innerWidth ) textRight = -window.innerWidth;
+         // var element = document.getElementById('text');
+         // element.style.right = Math.abs(textRight) + 'px';
+
+         textUp += 5;
+         if ( textUp > (window.innerHeight - 312) ) textUp = -window.innerHeight + 312;
+         element.style.top = Math.abs(textUp) + 'px';
       };
 
       var turn = 0;
