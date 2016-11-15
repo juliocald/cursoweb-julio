@@ -1,0 +1,35 @@
+<html>
+<head>
+   <title>Digital clock</title>
+   <style type="text/css">
+      body { background: black; margin: 4cm 0; text-align: center; }
+      #clock { font-size: 6em; color: #f4f442; text-shadow: 2px 2px 7px green; }
+   </style>
+</head>
+ 
+<body>
+   <div id="clock">HH:MM:SS:MS</div>
+   <script>
+      'use strict';
+      window.setInterval( 'updateClock()', 250);
+      function updateClock()
+      {
+         var date = new Date();
+         // document.getElementById('clock').innerHTML = date.toLocaleTimeString() + ":" + date.getMilliseconds();
+         var realHours = date.getHours();
+         var normal = true;
+         if (realHours >= 13) {
+            realHours = realHours - 12;
+            normal = false;
+         }
+         var string = realHours + ":" + date.getMinutes() + ":" + date.getSeconds() + ":" + date.getMilliseconds();
+         if (normal) {
+            string += " AM";
+         } else {
+            string += " PM";
+         }
+         document.getElementById('clock').innerHTML = string;
+      }
+   </script>
+</body>
+</html>
